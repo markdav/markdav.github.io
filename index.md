@@ -13,7 +13,6 @@ tagline: At the borders
   </p>
   <div class="content">
     <p>{{ post.excerpt }}
-    <br/>
     <a href="{{ post.url }}"><b>read more..</b></a></p>
   </div>
 {% endfor %}
