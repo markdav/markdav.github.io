@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Random adventures in code
+title: At the Borders, a blog
 tagline: At the borders
 ---
 {% include JB/setup %}
