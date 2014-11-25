@@ -6,6 +6,7 @@ tags:
   - monasca
 published: true
 ---
+
 I've been playing with [Monasca](https://launchpad.net/monasca), an interesting monitoring framework that the smart folk from Openstack are working on.  Monasca is really geared towards Ubuntu but I wanted to see what would be involved in monitoring a RedHat/CentOS box.  In this case I went with CentOS 6.3 which I set up as a fresh VM on the HP Helion public cloud.  Steps below:
 
 <!--more-->
@@ -42,7 +43,7 @@ This threw an error with the monasca install:
 
     exclude = {'invalid_encoded_data*',
 
-So, looking at python with a python -V it seems to be 2.6 on redhat but 2.7 on the ubuntu instance where I successfully installed the agent in the past.  I was surprised!  [This article](https://www.digitalocean.com/community/tutorials/how-to-set-up-python-2-7-6-and-3-3-3-on-centos-6-4) has some ponters. First line of attack was to upgrade python.  
+So, looking at python with a python -V it seems to be 2.6 on redhat but 2.7 on the ubuntu instance where I successfully installed the agent in the past.  I was surprised!  [This article](https://www.digitalocean.com/community/tutorials/how-to-set-up-python-2-7-6-and-3-3-3-on-centos-6-4) has some helpful pointers. First line of attack was to upgrade python.  
 
 Install the dev tools and some other handy stuff:
 
@@ -110,8 +111,3 @@ The final message looks okay, but is probably misleading:
     Cleaning up...
 
 Might look at it tomorrow!
-
-
-
-
-
