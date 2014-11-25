@@ -1,8 +1,10 @@
 ---
 layout: page
-title: At the Borders, a blog
+title: "-- At The Borders --"
 tagline: At the borders
+published: true
 ---
+
 {% include JB/setup %}
 
 
@@ -16,5 +18,3 @@ tagline: At the borders
     <a href="{{ post.url }}"><b>read more..</b></a></p>
   </div>
 {% endfor %}
-
-
