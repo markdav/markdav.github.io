@@ -1,7 +1,5 @@
-# Installing HP Operations Manager on Vagrant
+## Installing HP Operations Manager on Vagrant
 Operations Manager is the leading commercial monitoring product.  I work at HP in the monitoring space, but had never tried it out so why not?  I wanted to try the latest and greatest version of Operations Manager - OMi which is sometimes referred to as the Operations Bridge.  From a quick look at the videos, it seems to position itself as an integration hub for all things monitoring, and it looks pretty neat in the you tube videos, but seeing is believing and all that!  
-
-<!--more-->
 
 ### 1. Download the trial installer
 I used this URL to oull down the 60 day trial:
@@ -167,3 +165,5 @@ I should probably take the above commands and add them to a vagrant provisioning
     sudo /etc/init.d/OVCtrl start
 
  It started up .. tomorrow I'm going to start looking to see about using it. Quite excited about the product - the videos look awesome!
+
+
