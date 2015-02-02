@@ -21,47 +21,47 @@ Vagrant is useful for repeatedly scripting VMs.  "vagrant init" a new operations
 
 
 ``` ruby 
-    # -*- mode: ruby -*-
-    # vi: set ft=ruby :
-     
-    # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
-    VAGRANTFILE_API_VERSION = "2"
-      
-    Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-      config.vm.box = "ubuntu/trusty64"
-    
-      config.vm.provider "virtualbox" do |v|
-        v.memory = 4096
-        v.cpus = 2
-      end
-    
-      # config.vm.network "forwarded_port", guest: 80, host: 8080
-      # config.vm.network "private_network", ip: "192.168.33.10"
-    
-      # Handle local proxy settings
-      if Vagrant.has_plugin?("vagrant-proxyconf")
-        if ENV["http_proxy"]
-          config.proxy.http = ENV["http_proxy"]
-        end
-        if ENV["https_proxy"]
-          config.proxy.https = ENV["https_proxy"]
-        end
-        if ENV["no_proxy"]
-          config.proxy.no_proxy = ENV["no_proxy"]
-        end
-      end
-    
-      #  config.vm.network "forwarded_port", guest: 80, host:80
-      config.vm.network "public_network", bridge: 'eth2'
-    
-      # Can be handy to enable the gui
-      # config.vm.provider :virtualbox do |vb|
-      #  vb.gui = true
-      # end
-      
-    
-    end
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+ 
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+  
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
 
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+    v.cpus = 2
+  end
+
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # Handle local proxy settings
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    if ENV["http_proxy"]
+      config.proxy.http = ENV["http_proxy"]
+    end
+    if ENV["https_proxy"]
+      config.proxy.https = ENV["https_proxy"]
+    end
+    if ENV["no_proxy"]
+      config.proxy.no_proxy = ENV["no_proxy"]
+    end
+  end
+
+  #  config.vm.network "forwarded_port", guest: 80, host:80
+  config.vm.network "public_network", bridge: 'eth2'
+
+  # Can be handy to enable the gui
+  # config.vm.provider :virtualbox do |vb|
+  #  vb.gui = true
+  # end
+  
+
+end
+```
 
 
 ### 3. Run the install
