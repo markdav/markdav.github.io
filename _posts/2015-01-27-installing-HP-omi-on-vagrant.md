@@ -1,3 +1,11 @@
+---
+layout: post
+category: blog
+tagline: Supporting tagline
+tags: 
+  - OMi
+published: true
+---
 ## Installing HP Operations Manager on Vagrant
 Operations Manager is the leading commercial monitoring product.  I work at HP in the monitoring space, but had never tried it out so why not?  I wanted to try the latest and greatest version of Operations Manager - OMi which is sometimes referred to as the Operations Bridge.  From a quick look at the videos, it seems to position itself as an integration hub for all things monitoring, and it looks pretty neat in the you tube videos, but seeing is believing and all that!  
 
