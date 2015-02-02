@@ -20,6 +20,7 @@ The download was a pretty hefty zip file at 3gb. Unzipping it revealed an instal
 Vagrant is useful for repeatedly scripting VMs.  "vagrant init" a new operations_manager and place the installer there.  I set the Vagrantfile as follows based on minimum specs:
 
 
+``` ruby 
     # -*- mode: ruby -*-
     # vi: set ft=ruby :
      
