@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "Metric";
+    src: url(https://hpefonts.s3.amazonaws.com/MetricWeb-Regular.woff)
+        format("woff");
+}
+
+@font-face {
+    font-family: "Metric";
+    font-weight: 700;
+    src: url(https://hpefonts.s3.amazonaws.com/MetricWeb-Bold.woff)
+        format("woff");
+}
+
+@font-face {
+    font-family: "Metric";
+    font-weight: 600;
+    src: url(https://hpefonts.s3.amazonaws.com/MetricWeb-Semibold.woff)
+        format("woff");
+}
+
+@font-face {
+    font-family: "Metric";
+    font-weight: 100;
+    src: url(https://hpefonts.s3.amazonaws.com/MetricWeb-Light.woff)
+        format("woff");
+}
+
+body {
+    margin: auto 0;
+}
+
+.space {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    color: #fff !important;
+}
+
+body {
+    font-family: "Metric", sans-serif;
+}
+
+.main {
+    font-family: "Metric", Arial, "Metric" !important;
+    margin: 0 auto;
+    width: 75%;
+    min-width: 800px;
+    padding: 2.5em 2em 2em 3em;
+    font-size: 17px !important;
+    margin-left: 240px;
+}
+
+.Turquouise {
+    background-color: #01a982;
+    color: white;
+}
+
+.Slate {
+    background-color: #425563;
+    color: white !important;
+}
+
+.mc-preferred {
+    color: white;
+}
+
+
+
+table {
+    border-color: #eee;
+}
+
+.eee {
+    background-color: #eee;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: -10px;
+}
+.xref {
+    color: #000;
+}
+
+.tabletitle {
+    font-size: 22px;
+    text-align: left !important;
+    padding-left: 15px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.customsppheader {
+    font-size: 30px;
+}
+
+/* name file leftnavstyle.css */
+
+.sidenav { 
+    width: 20%;
+    min-height: 1400px;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    border-right-style: solid;
+    border-right-color: #eee;
+    background-image: linear-gradient(to right, #ffffff , #f4f4f4);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding-top: 4em;
+    float:left;
+}
+
+.sidenav a {
+    padding: 6px 0px 6px 0px;
+    text-decoration: none;
+    font-size: 16px !important;
+    color: #818181;
+    display: block;
+    font-family: inherit;
+}
+/*
+.sidenav a:hover {
+  color: #000;
+  background-color: #eee;
+  font-weight: bold;
+	padding:6px 20px 6px 20px;
+	
+}
+*/
+main,
+.sidenav {
+    clear: both;
+}
+
+/* Controls the width of the page */
+
+.main {
+    font-family: "Metric", Arial, "Metric" !important;
+    font-size:1.3vw;
+	margin:0px 0px 0px -10px;
+	width: 80%;
+    max-width: 900px;
+	padding: 2.5em 2em 2em 3em;
+    
+    display: inline-block;
+	min-height:1500px;
+    float: none;
+    position:inherit;
+}
+
+/* Assign "open" to the navigation item for the open page */
+
+.open {
+    color: #01a982 !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#header {
+    position: fixed;
+    margin-top: -100px;
+}
+
+.sublist {
+    color: white;
+    margin-left: 70px !important;
+}
+
+p.mc_notpreferred {
+    color: #eee !important;
+}
+
+#content {
+    width: 70%;
+    margin-left: 25%;
+}
+
+.navtitle {
+    font-size: 24px;
+    margin-top: -5px;
+    font-weight: bold;
+    color: #01a982;
+}
+
+.sidenav a {
+    font-size: 18px !important;
+    text-decoration: underline;
+}
+
+
+.navsectiontitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.white:hover {
+    color: #C6C9CA !important;
+}
+
+
+.note {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #01a982;
+    width: 80%;
+}
+
+.HPEGreen {
+    background-color: #01a982;
+    color: white;
+}
+
+body {
+    background-color: #ffffff !important;
+    font-size: 100%;
+    position: absolute;
+    font-family: "Metric", sans-serif !important;
+    overflow: scroll;
+    height: 1000px;
+    width: 100%;
+}
+
+.note {
+	width: 900px;
+	margin:0.8em 10px;
+	padding: 5px 0;
+	border-top: 2px solid #01A982;
+	border-bottom: 2px solid #01A982;
+}
+.note:hover {
+	background-color: #eee;
+}
+.note p {
+	display:inline;
+}
+a.standard {
+    color: #000;
+    text-decoration-line:underline;
+}
+
+a.standard:hover {
+    color:#01A982;
+}
+.new {
+    position:relative;
+    padding: 0 0 10px 0;
+}
+
+.new::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent #01a982;
+    border-width: 7px 0 7px 12px;
+    position: absolute;
+    top: .7em;
+    left: -1.4em;
+}

@@ -1,0 +1,999 @@
+/*<meta />*/
+
+/*<meta sourceDocument="C:\Users\fultond\Desktop\ccs_new2.docx" />*/
+
+p
+{
+	font-family: 'MetricHPE Light';
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+ol
+{
+	font-family: 'MetricHPE Light';
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+ul
+{
+	font-family: 'MetricHPE Light';
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+li
+{
+	font-family: 'MetricHPE Light';
+	font-size: 9pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+td
+{
+	font-family: 'MetricHPE Light';
+	font-size: 9pt;
+	vertical-align: top;
+}
+
+p.MISCTitleDescriptorinheader10pt
+{
+	margin-top: 9pt;
+	margin-bottom: 12pt;
+	font-family: 'MetricHPE Light';
+}
+
+p.CoverDocumentType10pt
+{
+	margin-left: 27pt;
+	text-align: right;
+	font-family: 'MetricHPE Semibold';
+}
+
+span.CoverDocumentType10ptChar
+{
+	font-size: 10pt;
+}
+
+p.CoverHeadline32ptto40pt
+{
+	margin-top: 100pt;
+	margin-bottom: 10pt;
+	margin-right: 72pt;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 32pt;
+}
+
+p.CoverSubtitle
+{
+	margin-bottom: 18pt;
+	margin-right: 108pt;
+	font-family: MetricHPE;
+	color: #000000;
+	font-size: 20pt;
+}
+
+p.BodyTextMetricHPE-Light10pt
+{
+	margin-bottom: 8pt;
+	font-family: MetricHPE-Light;
+}
+
+img.img_1
+{
+	left: 0;
+	text-align: left;
+	z-index: 2;
+	visibility: visible;
+	mso-wrap-style: square;
+	mso-width-percent: 0;
+	mso-height-percent: 0;
+	mso-wrap-distance-left: 9pt;
+	mso-wrap-distance-top: 0;
+	mso-wrap-distance-right: 9pt;
+	mso-wrap-distance-bottom: 0;
+	mso-position-horizontal: left;
+	mso-position-horizontal-relative: margin;
+	mso-position-vertical: absolute;
+	mso-position-vertical-relative: page;
+	mso-width-percent: 0;
+	mso-height-percent: 0;
+	mso-width-relative: page;
+	mso-height-relative: page;
+	margin-left: 0;
+	width: 170px;
+	height: 71px;
+}
+
+p.CoverDocumentType10pt_1
+{
+	margin-left: 27pt;
+	text-align: right;
+	margin-top: 3pt;
+	font-family: 'MetricHPE Light';
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	margin-bottom: 4pt;
+	mc-heading-level: 1;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14pt;
+}
+
+p.BodyTextMetricHPELight10pt
+{
+	margin-bottom: 8pt;
+	font-family: 'MetricHPE Light';
+}
+
+p.TableSubhead8pt
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	font-family: 'MetricHPE Semibold';
+	font-size: 8pt;
+}
+
+p.CoverTableofcontentstitle30pt
+{
+	margin-bottom: 18pt;
+	margin-left: 19pt;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30pt;
+}
+
+p.TOC1
+{
+	margin-bottom: 5pt;
+	margin-right: 58pt;
+	font-family: 'MetricHPE Light';
+	font-size: 10pt;
+}
+
+p.TOC2
+{
+	margin-bottom: 5pt;
+	margin-left: 9pt;
+	margin-right: 58pt;
+	font-family: 'MetricHPE Light';
+	font-size: 10pt;
+}
+
+p.hpe_body_copy
+{
+	margin-bottom: 11pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+	font-size: 10pt;
+}
+
+p.ListParagraph
+{
+	font-size: 9pt;
+	font-family: 'MetricHPE Light';
+}
+
+span.Hyperlink
+{
+	text-decoration: underline;
+}
+
+li.ListParagraph
+{
+	font-size: 9pt;
+	font-family: 'MetricHPE Light';
+}
+
+col.col_1
+{
+	width: 77pt;
+}
+
+td.td_1
+{
+	background-color: #auto;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+}
+
+td.td_2
+{
+	background-color: #auto;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+}
+
+td.td_3
+{
+	background-color: #auto;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+}
+
+td.td_4
+{
+	background-color: #auto;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+}
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+
+p.CoverTableofcontentstitle30pt_1
+{
+	margin-bottom: 18pt;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30pt;
+	margin-left: 0pt;
+}
+
+p.p_1
+{
+	margin-bottom: 16pt;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 24pt;
+}
+
+span.span_1
+{
+	font-style: italic;
+}
+
+p.ListParagraph_1
+{
+	font-size: 9pt;
+	font-family: 'MetricHPE Light';
+	margin-bottom: 8pt;
+}
+
+li.ListParagraph_1
+{
+	font-size: 9pt;
+	font-family: 'MetricHPE Light';
+	margin-bottom: 8pt;
+}
+
+span.Hyperlink_1
+{
+	text-decoration: underline;
+	font-size: 10pt;
+}
+
+ul.ul_1
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 36pt;
+}
+
+h2.Heading2
+{
+	page-break-after: avoid;
+	mc-heading-level: 2;
+	font-family: MetricHPE;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+p.NumberedList-Level1
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+	font-size: 10pt;
+}
+
+li.NumberedList-Level1
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+	font-size: 10pt;
+}
+
+p.NumberedList-Level2
+{
+	margin-bottom: 6pt;
+	color: #000000;
+	font-size: 10pt;
+	font-family: 'MetricHPE Light';
+}
+
+li.NumberedList-Level2
+{
+	margin-bottom: 6pt;
+	color: #000000;
+	font-size: 10pt;
+	font-family: 'MetricHPE Light';
+}
+
+a.Hyperlink
+{
+	text-decoration: underline;
+}
+
+span.span_2
+{
+	font-weight: bold;
+}
+
+ol.ol_1
+{
+	padding-left: 0px;
+	list-style-type: decimal;
+	margin-left: 13pt;
+}
+
+ol.ol_2
+{
+	padding-left: 0px;
+	list-style-type: lower-alpha;
+	margin-left: 27pt;
+}
+
+ol.ol_3
+{
+	padding-left: 0px;
+	list-style-type: lower-alpha;
+	margin-left: 14pt;
+}
+
+p.body_lead-in
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.BulletLevel1
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+}
+
+li.BulletLevel1
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+}
+
+span.MISCFigureCaptionHeaderBold8pt
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 8pt;
+}
+
+p.Caption
+{
+	font-size: 9pt;
+	margin-bottom: 10pt;
+	font-family: 'MetricHPE Light';
+	font-style: italic;
+	color: #C6C6C2;
+}
+
+p.MISCTableCaptionHeader8pt
+{
+	margin-bottom: 3pt;
+	font-family: 'MetricHPE Light';
+	font-size: 8pt;
+}
+
+span.MISCTableCaptionHeaderBold8pt
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+	font-size: 8pt;
+}
+
+p.TableRowhead8pt
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	font-size: 8pt;
+	font-family: 'MetricHPE Semibold';
+}
+
+p.TableBody8pt
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	font-family: 'MetricHPE Light';
+	font-size: 8pt;
+}
+
+h3.Heading3
+{
+	page-break-after: avoid;
+	mc-heading-level: 3;
+	font-family: MetricHPE;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+span.hpe_body_copyChar
+{
+	color: #000000;
+	font-size: 10pt;
+}
+
+p.body_lead-in_1
+{
+	background-color: #FFFFFF;
+	margin-top: 6pt;
+	margin-bottom: 3pt;
+	font-family: 'Metric Light';
+	color: #000000;
+	font-size: 11pt;
+}
+
+ul.ul_2
+{
+	padding-left: 0px;
+	list-style-type: square;
+	margin-left: 9pt;
+}
+
+img.img_2
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 597px;
+	height: 297px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+span.MISCFigureCaptionHeaderBold8pt_1
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 8pt;
+	font-family: MetricHPE;
+}
+
+p.p_2
+{
+	font-family: MetricHPE;
+}
+
+span.span_3
+{
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+p.Caption_1
+{
+	margin-bottom: 10pt;
+	font-family: 'MetricHPE Light';
+	font-style: italic;
+	color: #C6C6C2;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+col.col_2
+{
+	width: 118pt;
+}
+
+col.col_3
+{
+	width: 413pt;
+}
+
+span.MISCTableCaptionHeaderBold8pt_1
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+	font-size: 8pt;
+	font-family: MetricHPE;
+}
+
+p.MISCTableCaptionHeader8pt_1
+{
+	margin-bottom: 3pt;
+	font-family: 'MetricHPE Light';
+	font-size: 8pt;
+	color: #00B388;
+}
+
+td.td_5
+{
+	background-color: #auto;
+	padding-left: 0pt;
+	padding-right: 6pt;
+}
+
+td.td_6
+{
+	border-bottom-style: solid;
+	border-bottom-width: 5pt;
+	border-bottom-color: #00B388;
+	background-color: #auto;
+	padding-left: 0pt;
+	padding-right: 6pt;
+}
+
+td.td_7
+{
+	border-bottom-style: solid;
+	border-bottom-width: 5pt;
+	border-bottom-color: #00B388;
+	background-color: #auto;
+}
+
+td.td_8
+{
+	border-top-style: solid;
+	border-top-width: 5pt;
+	border-top-color: #00B388;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	background-color: #auto;
+	padding-left: 0pt;
+	padding-right: 6pt;
+}
+
+img.img_3
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 10px;
+	height: 9px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+td.td_9
+{
+	border-top-style: solid;
+	border-top-width: 5pt;
+	border-top-color: #00B388;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	background-color: #auto;
+}
+
+td.td_10
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	background-color: #auto;
+	padding-left: 0pt;
+	padding-right: 6pt;
+}
+
+td.td_11
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	background-color: #auto;
+}
+
+p.TableBody8pt_1
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	font-family: 'MetricHPE Light';
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+img.img_4
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 18px;
+	height: 16px;
+}
+
+img.img_5
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 15px;
+	height: 15px;
+}
+
+td.td_12
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2pt;
+	border-bottom-color: black;
+	background-color: #auto;
+	padding-left: 0pt;
+	padding-right: 6pt;
+}
+
+td.td_13
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2pt;
+	border-bottom-color: black;
+	background-color: #auto;
+}
+
+tr.tr_1
+{
+	height: 3pt;
+}
+
+p.p_3
+{
+	font-family: 'Metric Bold';
+	color: #062832;
+	font-size: 12pt;
+}
+
+img.img_6
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 22px;
+	height: 16px;
+}
+
+img.img_7
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 22px;
+	height: 20px;
+}
+
+img.img_8
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 109px;
+	height: 86px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+p.p_4
+{
+	font-size: 10pt;
+}
+
+p.MISCNote-Ruleabove
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	margin-top: 18pt;
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11pt;
+}
+
+p.MISCNote-Rulebelow
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	margin-bottom: 18pt;
+	font-family: 'MetricHPE Light';
+	color: #000000;
+}
+
+h4.Heading4
+{
+	page-break-after: avoid;
+	mc-heading-level: 4;
+	font-family: 'MetricHPE Medium';
+	font-weight: normal;
+}
+
+img.img_9
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 528px;
+	height: 269px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+img.img_10
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 141px;
+	height: 125px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+p.p_5
+{
+	margin-left: 36pt;
+}
+
+img.img_11
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 314px;
+	height: 106px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+span.Hyperlink_2
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+img.img_12
+{
+	visibility: visible;
+	width: 509px;
+	height: 212px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+p.p_6
+{
+	font-family: 'Metric Bold';
+	color: #093D4B;
+	font-size: 13pt;
+}
+
+p.BulletLevel2
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	font-size: 10pt;
+}
+
+li.BulletLevel2
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	font-size: 10pt;
+}
+
+li.BulletLevel2_1
+{
+	margin-bottom: 6pt;
+	font-family: 'MetricHPE Light';
+	font-size: 10pt;
+	margin-left: 19pt;
+}
+
+p.p_7
+{
+	font-family: MetricHPE;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14pt;
+}
+
+p.NumberedList-Level3
+{
+	margin-bottom: 6pt;
+	color: #000000;
+	font-size: 10pt;
+	font-family: 'MetricHPE Light';
+}
+
+li.NumberedList-Level3
+{
+	margin-bottom: 6pt;
+	color: #000000;
+	font-size: 10pt;
+	font-family: 'MetricHPE Light';
+}
+
+p.BodyText_LastMetricHPELight10pt
+{
+	margin-bottom: 16pt;
+	font-family: 'MetricHPE Light';
+}
+
+img.img_13
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 382px;
+	height: 206px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+img.img_14
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 391px;
+	height: 249px;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-right-style: solid;
+	border-right-width: 1pt;
+}
+
+span.span_4
+{
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	color: #1C1E29;
+	font-size: 11pt;
+}
+
+ol.ol_4
+{
+	padding-left: 0px;
+	list-style-type: upper-roman;
+	margin-left: 13pt;
+}
+
+p.BodyTextMetricHPELight10pt_1
+{
+	margin-bottom: 8pt;
+	font-family: 'MetricHPE Semibold';
+	color: #C140FF;
+}
+
+p.p_8
+{
+	color: #00B0F0;
+}
+
+h1.Heading1_1
+{
+	page-break-after: avoid;
+	margin-bottom: 4pt;
+	mc-heading-level: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14pt;
+	font-family: 'MetricHPE Light';
+	text-decoration: none;
+}
+
+p.p_9
+{
+	margin-left: 5pt;
+	margin-right: 5pt;
+	text-align: right;
+}
+
+p.p_10
+{
+	margin-right: 5pt;
+	margin-left: 0pt;
+}
+

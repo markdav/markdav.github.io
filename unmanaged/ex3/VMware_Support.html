@@ -1,0 +1,293 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="style.css"><title>VMware OS support tool for HPE Synergy</title><link rel="stylesheet" type="text/css" href="vmwarestyles.css">
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<style>
+.table {
+width:75%;
+}
+    </style></head><body id="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD"><a name="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD"><!-- --></a><div class="sidenav">
+ <p class="navtitle" style="margin-bottom:10px; margin-top:-10px;">HPE Synergy Software Release Information</p>
+    <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+ <ul class="navbar" style="margin-top: 10px; margin-left: -35px"><li class="navsectiontitle" style="list-style-type:none; margin-bottom:30px">HPE SYNERGY SOFTWARE OVERVIEW &amp; DOWNLOADS</li>
+                                <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px">
+                <a href="index.html">HPE Synergy Software Releases - Overview</a>
+                </li>
+                                    <li style="margin-bottom:10px"><a href="Whats_New.html" >HPE Synergy Software Releases - What's New?</a></li>
+ </ul>
+   <br>
+ <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type:none; margin-bottom:20px">HPE SYNERGY SOFTWARE RELEASE TOOLS</li>
+    <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px"><a href="Firmware_Comparison_Tool.html">HPE Synergy Firmware Comparison Tool</a></li>
+    <li style="margin-bottom:10px"><a href="Firmware_Feature_Table.html" >HPE Synergy Firmware Feature Comparison Table</a></li>
+    <li style="margin-bottom:10px"><a href="Upgrade_Table.html">HPE Synergy Upgrade Paths</a></li>
+    <li style="margin-bottom:10px"><a href="VMware_Support.html" class="open">VMware OS Support for HPE Synergy</a></li>
+</ul>
+   <br>
+                                
+<div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type: none; margin-bottom:10px">OTHER RESOURCES</li>
+<ul style="list-style-type: none; margin-left: -30px;">
+    <li><a href="EOS_Upgrade_Paths.html">Upgrade Paths for Past HPE Synergy Releases</a></li>
+    <li><a href="Identifying_upgrade_paths.html">Identifying Upgrade Paths</a></li>
+    <li><a href="Resources.html">HPE Synergy Resources</a></li>
+    <li><a class="xref external" href="http://www.hpe.com/info/synergy-docs" target="_blank">Hewlett Packard Enterprise Information Library</a></li>
+     </ul></ul>
+ 
+ 
+</div>
+
+
+
+
+<div class="main"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">VMware OS support tool for HPE Synergy</h1><div class="body refbody"><section class="section" id="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD__GUID-188EA676-5EAB-401C-B4D8-A7D3217D0084"><a name="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD__GUID-188EA676-5EAB-401C-B4D8-A7D3217D0084"><!-- --></a><h2 class="title sectiontitle">VMware OS versions</h2> 
+		 
+		<p class="p">This tool provides information for using VMware ESXi releases with HPE Synergy Custom SPPs. 
+		</p> 
+		<p class="p">Hewlett Packard Enterprise provides VMware ESXi images for HPE servers that integrate the VMware ESXI drivers and management software required to run ESXi on HPE servers.</p><p> Observe the following: 
+		</p> 
+		<div class="p"> 
+		<ul class="ul"><ul><li class="li"><p class="p">These images are provided as a starting point to ensure a successful installation. 
+			 </p></li><li class="li"><p class="p">You may install required patches and security updates from VMware. 
+			 </p></li><li class="li"><p class="p">You may optionally add, remove, or update the HPE Offline Bundles as needed. 
+			 </p></li><li class="li"><p class="p">Driver updates may be required to match a supported HPE Synergy Software Release as documented on these pages. 
+			 </p></li><li class="li"><p class="p">You can update VMware ESXi and vSphere using the standard VMware update tools. 
+            </p></li></ul></ul> 
+		</div> 
+		<div class="p"> 
+		  <div style="width:100%; margin-top:1em"></div><div class="importanttitle"></div><div class="note important"><span style="font-weight:bold">IMPORTANT: </span><div class="p">
+			 <ul class="ul"><ul><li class="li"><p class="p"><b>March 2020 and December 2019 HPE ESXi Images for VMware ESXi 6.5U3 and 6.7U3 are not compatible on HPE Synergy.</b>
+				  </p></li><li class="li"><p class="p"> The May 2020 HPE ESXi 6.7 U3 and 6.5 U3 images are available on the 
+					 <a class="xref external standard" href="http://www.hpe.com/info/esxidownload" target="_blank">VMware ESXi images for HPE Servers</a> website. To access them, select the appropriate HPE ESXi version and once logged into VMware's download site, scroll down to the "Synergy Custom Images" section and select the Install CD. 
+				  </p></li><li class="li"><p class="p"> If you require access to the August 2019 HPE ESXi images for HPE Synergy, contact the Hewlett Packard Enterprise Support Center to request access. 
+                 </p></li></ul></ul>
+		</div></div> 
+		</div> 
+		<div class="p"> 
+		  <div style="width:100%; margin-top:1em"></div><div class="notetitle"></div><div class="note note"><span style="font-weight:bold">NOTE: </span><p class="p"> Although drivers may be obtained through other resources, such as vibsdepot, the resulting HPE Synergy firmware/drivers that are installed must be compliant with the contents of the chosen HPE Synergy Management combination and HPE Synergy Custom SPP. 
+			 </p></div> 
+		</div> 
+		<p class="p">Select an HPE ESXi Custom Image from the table below. Then, select an associated HPE Synergy Custom SPP to view information about VMware OS support. 
+		</p> 
+		<div class="p"> 
+		<div class="tablenoborder"><a name="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD__TABLE_E6965B49FE0A4102B21576CDB20BB9BE"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-1910BFEE-5A85-43DB-B2C2-C1635ADA21BD__TABLE_E6965B49FE0A4102B21576CDB20BB9BE" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:100%"></colgroup><thead class="thead" style="text-align:left;"><tr isThead="nothead" class="row"><th class="entry cell-norowborder" id="d39071e94">VMware OS Versions 
+				  </th></tr></thead><tbody class="tbody" brand="HPE"><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 Update 3 (HPE Synergy May 2020) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0501_V67_U3_May.html">HPE Synergy Custom SPP 2020.05.01</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 Update 3 (Aug 2019) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0326_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200326</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0125_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200125</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0124_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200124</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1219_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20191219</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V67_U3.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V67_U3.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V67_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V67_U3.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V67_U3.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 Update 2 (Apr 2019) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0326_V67_U2.html">HPE Synergy Custom SPP 2019.12.20200326</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0125_V67_U2.html">HPE Synergy Custom SPP 2019.12.20200125</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0124_V67_U2.html">HPE Synergy Custom SPP 2019.12.20200124</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1219_V67_U2.html">HPE Synergy Custom SPP 2019.12.20191219</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V67_U2.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V67_U2.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V67_U2.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V67_U2.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V67_U2.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V67_U2.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V67_U2.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 Update 1 (Apr 2019) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V67_U1.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V67_U1.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V67_U1.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 Update 1 (Oct 2018) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V67_U1_Oct.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V67_U1_Oct.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V67_U1_Oct.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V67_U1_Oct.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V67_U1_Oct.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V67_U1_April.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0611_V67_U1.html">HPE Synergy Custom SPP 2018.11.20190611</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0405_V67_U1.html">HPE Synergy Custom SPP 2018.11.20190405</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0205_V67_U1.html">HPE Synergy Custom SPP 2018.11.20190205</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1205_V67_U1.html">HPE Synergy Custom SPP 2018.11.20181205</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.7 (Sept 2018) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0611_V67.html">HPE Synergy Custom SPP 2018.11.20190611</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0405_V67.html">HPE Synergy Custom SPP 2018.11.20190405</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0205_V67.html">HPE Synergy Custom SPP 2018.11.20190205</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1205_V67.html">HPE Synergy Custom SPP 2018.11.20181205</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.5 Update 3 (HPE Synergy May 2020) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0501_V65_U3_May.html">HPE Synergy Custom SPP 2020.05.01</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.5 Update 3 (Aug 2019) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0326_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200326</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0125_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200125</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0124_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20200124</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1219_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.12.20191219</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V65_U3_Aug.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.5 Update 3 (Jun 2019) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0326_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.12.20200326</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0125_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.12.20200125</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0124_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.12.20200124</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1219_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.12.20191219 
+							 </a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V65_U3_Jun.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V65_U3.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V65_U3.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V65_U3.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V65_U3.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V65_U3.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.5 Update 2 (Apr 2019) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0326_V65_U2.html">HPE Synergy Custom SPP 2019.12.20200326</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0125_V65_U2.html">HPE Synergy Custom SPP 2019.12.20200125</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0124_V65_U2.html">HPE Synergy Custom SPP 2019.12.20200124</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1219_V65_U2.html">HPE Synergy Custom SPP 2019.12.20191219</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V65_U2.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V65_U2.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V65_U2.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V65_U2.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V65_U2.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V65_U2.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V65_U2.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.5 Update 1 (Feb 2018) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0611_V65_U1.html">HPE Synergy Custom SPP 2018.11.20190611</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0405_V65_U1.html">HPE Synergy Custom SPP 2018.11.20190405</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0205_V65_U1.html">HPE Synergy Custom SPP 2018.11.20190205</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1205_V65_U1.html">HPE Synergy Custom SPP 2018.11.20181205</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cell-norowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.0 Update 3 (Sept 2019) 
+					 </button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0325_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.09.20200325</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0926_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.09.20190926</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0925_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.09.20190925</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V60_U3_Sept.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li></ul> 
+					 </div></td></tr><tr isThead="thead" class="row"><td class="entry cellrowborder menu" headers="d39071e94 "><button class="accordion">VMware ESXi 6.0 Update 3 (Apr 2019) 
+					</button><div class="p accordioncontent"> 
+					 <ul class="ul"><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0324_V60_U3_Apr.html">HPE Synergy Custom SPP 2019.03.20200324</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0123_V60_U3_Apr.html">HPE Synergy Custom SPP 2019.03.20200123</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP1029_V60_U3_Apr.html">HPE Synergy Custom SPP 2019.03.20191029</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0826_V60_U3_Apr.html">HPE Synergy Custom SPP 2019.03.20190826</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0825_V60_U3.html">HPE Synergy Custom SPP 2019.03.20190825</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0718_V60_U3.html">HPE Synergy Custom SPP 2019.03.20190718</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0612_V60_U3.html">HPE Synergy Custom SPP 2019.03.20190612</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0514_V60_U3.html">HPE Synergy Custom SPP 2019.03.20190514</a> 
+						  </p></li><li class="li accordionlinks"><p class="p"><a class="xref" href="SPP0401_V60_U3.html">HPE Synergy Custom SPP 2019.03.20190401</a> 
+						  </p></li></ul> 
+					 </div></td></tr></tbody></table></div> 
+		</div> 
+	 </section></div></article></main></div><script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var accordioncontent = this.nextElementSibling;
+if (accordioncontent.style.maxHeight){
+accordioncontent.style.maxHeight = null;
+} else {
+accordioncontent.style.maxHeight = accordioncontent.scrollHeight +
+"px";
+}
+});
+}
+</script><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script></body></html>

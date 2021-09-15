@@ -1,0 +1,114 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="© Copyright 2019,  Hewlett Packard Enterprise Development LP">
+    <link rel="stylesheet" type="text/css" href="hpefonts.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HPE Synergy Firmware Feature Comparison Table</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+</head>
+
+<body id="GUID-66755CAA-705F-41E4-B427-42CF81F5A32F"><a name="GUID-66755CAA-705F-41E4-B427-42CF81F5A32F">
+        <!-- --></a>
+    <div class="sidenav">
+        <p class="navtitle" style="margin-bottom:10px; margin-top:-10px;">HPE Synergy Software Release Information</p>
+        <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+        <ul class="navbar" style="margin-top: 10px; margin-left: -35px">
+            <li class="navsectiontitle" style="list-style-type:none; margin-bottom:30px">HPE SYNERGY SOFTWARE OVERVIEW &amp; DOWNLOADS</li>
+            <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px">
+                    <a href="index.html">HPE Synergy Software Releases - Overview</a>
+                </li>
+                <li style="margin-bottom:10px"><a href="Whats_New.html">HPE Synergy Software Releases - What's New?</a></li>
+            </ul>
+            <br>
+            <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+            <li class="navsectiontitle" style="margin-top: 10px; list-style-type:none; margin-bottom:20px">HPE SYNERGY SOFTWARE RELEASE TOOLS</li>
+            <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px"><a href="Firmware_Comparison_Tool.html">HPE Synergy Firmware Comparison Tool</a></li>
+                <li style="margin-bottom:10px"><a href="Firmware_Feature_Table.html" class="open">HPE Synergy Firmware Feature Comparison Table</a></li>
+                <li style="margin-bottom:10px"><a href="Upgrade_Table.html">HPE Synergy Upgrade Paths</a></li>
+                <li style="margin-bottom:10px"><a href="VMware_Support.html">VMware OS Support for HPE Synergy</a></li>
+            </ul>
+            <br>
+
+            <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+            <li class="navsectiontitle" style="margin-top: 10px; list-style-type: none; margin-bottom:10px">OTHER RESOURCES</li>
+            <ul style="list-style-type: none; margin-left: -30px;">
+                <li><a href="EOS_Upgrade_Paths.html">Upgrade Paths for Past HPE Synergy Releases</a></li>
+                <li><a href="Identifying_upgrade_paths.html">Identifying Upgrade Paths</a></li>
+                <li><a href="Resources.html">HPE Synergy Resources</a></li>
+                <li><a class="xref external" href="http://www.hpe.com/info/synergy-docs" target="_blank">Hewlett Packard Enterprise Information Library</a></li>
+            </ul>
+        </ul>
+
+    </div>
+    <div class="main">
+        <main role="main">
+            <article role="article" aria-labelledby="ariaid-title1">
+                <h1 class="title topictitle1" id="ariaid-title1">HPE Synergy Firmware Feature Comparison Table</h1>
+                <div class="body refbody">
+                    <section class="section" id="GUID-66755CAA-705F-41E4-B427-42CF81F5A32F__GUID-CFA48DA0-F05B-4331-AE20-BC1A181B723C"><a name="GUID-66755CAA-705F-41E4-B427-42CF81F5A32F__GUID-CFA48DA0-F05B-4331-AE20-BC1A181B723C">
+                            <!-- --></a>
+                        <p class="p">Select an HPE Synergy Management Combination below to view supported features.
+                        </p>
+                        <p class="p"><a class="xref standard" href="synergy_feature_5_20.html#GUID-46EB3EBB-6F1A-499C-8041-89B190241844">HPE Synergy Management Combination 5.2</a>
+                        </p>
+                        <p class="p"><a class="xref standard" href="synergy_feature_5_00.html">HPE Synergy Management Combination 5.0</a>
+                        </p>
+                        <p class="p">
+                            <a class="xref standard" href="synergy_feature_4_20.html#GUID-481272A1-3782-4CD5-8571-EEE42C9F32AE">HPE Synergy Management Combination 4.2</a>
+                        </p>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </div>
+        <script>
+            (function(document) {
+                'use strict';
+                var TableFilter = (function(Arr) {
+                    var _input;
+
+                    function
+                    _onInputEvent(e) {
+                        _input = e.target;
+                        var tables =
+                            document.getElementsByClassName(_input.getAttribute('data-table'));
+                        Arr.forEach.call(tables, function(table) {
+                            Arr.forEach.call(table.tBodies, function(tbody) {
+                                Arr.forEach.call(tbody.rows, _filter);
+                            });
+                        });
+                    }
+
+                    function _filter(row) {
+                        var text = row.textContent.toLowerCase(),
+                            val = _input.value.toLowerCase();
+                        row.style.display =
+                            text.indexOf(val) === -1 ? 'none' : 'table-row';
+                    }
+
+                    return {
+                        init: function() {
+                            var inputs = document.getElementsByClassName('tableFilter');
+                            Arr.forEach.call(inputs, function(input) {
+                                input.oninput = _onInputEvent;
+                            });
+                        }
+                    };
+                })(Array.prototype);
+                document.addEventListener('readystatechange', function() {
+                    if (document.readyState === 'complete') {
+                        TableFilter.init();
+                    }
+                });
+            })(document);
+
+        </script>
+</body>
+
+</html>

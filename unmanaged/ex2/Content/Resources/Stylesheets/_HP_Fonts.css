@@ -1,0 +1,96 @@
+﻿/*<meta />*/
+
+/* This header may be removed before distributing to customers. 
+
+NOTE: This header has been updated for QCCR1K4406 HPE SFFS 2.00 & 2.01 both have an invalid _HP_IE.css file
+
+FILE:         _HP_IE.css
+DESCRIPTION:  Cascading Style Sheet for HPE software products
+MODIFIED:     October 8, 2015
+LEVEL         CSS Level 2 (plus support for Madcap Flare Webhelp)
+VERSION:      1.00 (for fileset 2.02)
+ 	
+*/
+
+@font-face
+{
+	font-family: 'MetricRegular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('./_HP_fonts/Regular/MetricWeb-Regular.eot'); /* IE9 Compat Modes */
+	src: url('./_HP_fonts/Regular/MetricWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./_HP_fonts/Regular/MetricWeb-Regular.woff') format('woff'),
+	url('./_HP_fonts/Regular/MetricApp-Regular.ttf') format('truetype'),
+	url('./_HP_fonts/Regular/Metric-Regular.otf') format('opentype');
+} 
+
+@font-face
+{
+	font-family: 'MetricBold';
+	font-weight: bold;
+	font-style: normal;
+    src: url('./_HP_fonts/Bold/MetricWeb-Bold.eot'); /* IE9 Compat Modes */
+	src: url('./_HP_fonts/Bold/MetricWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+	url('./_HP_fonts/Bold/MetricWeb-Regular.woff') format('woff'),
+	url('./_HP_fonts/Bold/MetricApp-Bold.ttf') format('truetype'),
+	url('./_HP_fonts/Bold/Metric-Bold.otf') format('opentype');
+} 
+
+@font-face
+{
+	font-family: 'MetricRegularItalic';
+	font-weight: normal;
+	font-style: italic;
+	src: url('./_HP_fonts/Italic/MetricWeb-RegularItalic.eot'); /* IE9 Compat Modes */
+	src: url('./_HP_fonts/Italic/MetricWeb-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./_HP_fonts/Italic/MetricWeb-RegularItalic.woff') format('woff'),
+	url('./_HP_fonts/Italic/MetricApp-RegularItalic.ttf') format('truetype'),
+	url('./_HP_fonts/Italic/Metric-RegularItalic.otf') format('opentype');
+} 
+
+@font-face
+{
+	font-family: 'MetricBoldItalic';
+	font-weight: bold;
+	font-style: italic;
+    src: url('./_HP_fonts/BoldItalic/MetricWeb-BoldItalic.eot'); /* IE9 Compat Modes */
+	src: url('./_HP_fonts/BoldItalic/MetricWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./_HP_fonts/BoldItalic/MetricWeb-BoldItalic.woff') format('woff'),
+	url('./_HP_fonts/BoldItalic/MetricApp-BoldItalic.ttf') format('truetype'),
+	url('./_HP_fonts/BoldItalic/Metric-BoldItalic.otf') format('opentype');
+} 
+
+@font-face
+{
+	font-family: 'MetricMedium';
+	font-weight: normal;
+	font-style: normal;
+    src: url('./_HP_fonts/Bold/MetricWeb-Medium.eot'); /* IE9 Compat Modes */
+	src: url('./_HP_fonts/Bold/MetricWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./_HP_fonts/Bold/MetricWeb-Medium.woff') format('woff'),
+	url('./_HP_fonts/Bold/MetricApp-Medium.ttf') format('truetype'),
+	url('./_HP_fonts/Bold/Metric-Medium.otf') format('opentype');
+} 
+
+/* "Frameless" icon fonts */
+@namespace MadCap "localhost";
+@font-face {
+	font-family: 'font_icon';
+	src:url('_HP_Icons/_HP_icons.eot');
+	src:url('_HP_Icons/_HP_icons.eot') format('embedded-opentype'),
+		url('_HP_Icons/_HP_icons.ttf') format('truetype'),
+		url('_HP_Icons/_HP_icons.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'font_icon';
+	src:url('_HP_Icons/_HP_icons.eot');
+	src:url('_HP_Icons/_HP_icons.eot') format('embedded-opentype'),
+		url('_HP_Icons/_HP_icons.ttf') format('truetype'),
+		url('_HP_Icons/_HP_icons.woff') format('woff');
+	font-weight: bold;
+}
+
+
+
+/* Copyright 2007-2015 Hewlett Packard Enterprise Development LP */

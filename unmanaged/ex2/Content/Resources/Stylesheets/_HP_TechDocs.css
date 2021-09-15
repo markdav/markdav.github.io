@@ -1,0 +1,745 @@
+/*<meta />*/
+/*
+
+FILE:         _HP_TechDocs.css
+DESCRIPTION:  Cascading Style Sheet for HPE Tech Docs team
+MODIFIED:     May, 2013
+LEVEL:        
+VERSION:      1.0 (released with fileset 1.80)
+
+*/
+
+@import url('_HP_IE_Experience.css');
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+
+p.results
+{
+	font-style: italic;
+	padding-left: 28px;
+	background-image: url("./graphics/_HP_ResultsArrow.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+h1
+{
+	margin-bottom: 0.5em;
+}
+
+@media screen {
+	
+	/* Make all headings use Metric font so they don't look inconsistent. Conflicts with PDF, so inside screen media query. */
+	h3, h4, h5, h6
+	{
+		font-family: MetricMedium, Arial;
+	}
+	
+	/* Fix the odd font sizes that make h2 smaller than h3. Uses type-scale.com 1.200 Minor Third scale. */
+	/* Only want these applied to help output, so wrapped in the screen media query. */
+	/*h1 {font-size: 2.074em;}
+	h2 {font-size: 1.728em;}
+	h3 {font-size: 1.44em;}
+	h4 {font-size: 1.2em;}
+	h5 {font-size: 1em;}
+	h6 {font-size: 0.833em;}*/
+	
+	/* Custom: 1.175 scale */
+	/*h1 {font-size: 1.906em;}
+	h2 {font-size: 1.622em;}
+	h3 {font-size: 1.381em;}
+	h4 {font-size: 1.175em;}
+	h5 {font-size: 1em;}
+	h6 {font-size: 0.851em;}*/
+	
+	/* Custom: 1.15 scale */
+	h1 {font-size: 1.749em;}
+	h2 {font-size: 1.521em;}
+	h3 {font-size: 1.322em;}
+	h4 {font-size: 1.15em;}
+	h5 {font-size: 1em;}
+	h6 {font-size: 0.87em;}
+	
+	/* 1.125 Major Second scale */
+	/*h1 {font-size: 1.602em;}
+	h2 {font-size: 1.424em;}
+	h3 {font-size: 1.266em;}
+	h4 {font-size: 1.125em;}
+	h5 {font-size: 1em;}
+	h6 {font-size: 0.889em;}*/
+}
+
+/* Added the headings to make them appear in the style window. */
+h3
+{
+	mc-disabled: false;
+}
+h4
+{
+	mc-disabled: false;
+}
+
+h5
+{
+	mc-disabled: false;
+}
+
+h6
+{
+	mc-disabled: false;
+}
+div.footnote
+{
+	font-size: 90%;
+	margin-bottom: 1.1em; /* Spacing at end of div, to undo what is being done for the paragraphs. */
+	page-break-before: avoid;
+}
+div.footnote p
+{
+	margin-bottom: 0.5em;
+}
+.filename
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+div.filename
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	margin-bottom: 1.1em; /* Spacing at end of div, to undo what is being done for the paragraphs. */
+}
+div.filename p
+{
+	margin-bottom: 0.2em; /* Spacing between paragraphs. */
+}
+
+/************************* For User Input *************************/
+
+.userinput, .cmd
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+div.userinput /* For multi-line user input. */
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	font-weight: bold;
+	margin-bottom: 1.1em; /* Spacing at end of div, to undo what is being done for the paragraphs. */
+}
+div.userinput p
+{
+	margin-bottom: 0.2em; /* Spacing between paragraphs. */
+}
+
+/************************* For User Input *************************/
+
+.ui_emphasis
+{
+	font-style: italic;
+}
+
+/************************* For Computer Output *************************/
+
+.computeroutput
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+div.computeroutput /* Required two settings to make this look correct. */
+{
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	margin-bottom: 1.1em; /* Spacing at end of div, to undo what is being done for the paragraphs. */
+}
+div.computeroutput p
+{
+	margin-bottom: 0.2em; /* Spacing between paragraphs. */
+}
+
+/************************* Backgrounds for Examples *************************/
+
+div.example /* Add spacing to the top of the HPE SW style. */
+{
+	margin-top: 10px;
+}
+
+/************************* Images *************************/
+
+img
+{
+	border: 2px solid #ccc;
+}
+/* Use to turn off image borders on icons, etc. */
+img.border_off
+{
+	border: none;
+}
+/* Use in Help output for making thumbnails of images. */
+img.ThumbnailHover
+{
+	mc-thumbnail: hover;
+}
+img.ThumbnailPopup
+{
+	mc-thumbnail: popup;
+}
+
+/************************* Admonitions *************************/
+
+div.Admonition_Note, div.Admonition_Important, div.Admonition_Caution, div.Admonition_Tip
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 5px;
+	padding-top: 11px;
+	padding-left: 42px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	border-top: 1px solid #E5E8E8;
+	border-bottom: 1px solid #E5E8E8;
+	border-left: none;
+	border-right: none;
+	background-color: #ffffff;
+	page-break-inside: avoid;
+}
+/* Below are for the admonition graphics. */
+/* Left Center position might not look great for multi-paragraph notes. May need to change center to top, and then manually adjust a top border in the images, because px settings here don't work in Flare. Ideally I would like Left Top, but that doesn't seem to work with Flare. */
+div.Admonition_Note
+{
+	background-image: url("./graphics/_HP_AdmonitionIcon_Note.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.Admonition_Important
+{
+	background-image: url("./graphics/_HP_AdmonitionIcon_Important.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.Admonition_Caution
+{
+	background-image: url("./graphics/_HP_AdmonitionIcon_Caution.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.Admonition_Tip
+{
+	background-image: url("./graphics/_HP_AdmonitionIcon_Tip.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.Admonition_Important>p:first-child
+{
+	mc-auto-number-format: '{b}Important: {/b}';  /* Localizable */ 
+}
+
+/************************* Caption Styles *************************/
+
+caption /* For a table caption element. Note: cross references do not work with this element, so use the below style. */
+{
+	font-style: italic;
+}
+
+p.caption_figure,
+p.caption_table /* Necessary so cross references to tables will only show the caption and not the entire table's text. */
+{
+	color: #222222;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 100%;
+	margin-bottom: 0.2em; /* Spacing after paragraph, to match table captions. */
+}
+
+/************************* Cross References *************************/
+
+MadCap|xref.caption /* Cross references to captions. */
+{
+	color: #01a982;
+	mc-format: '{para}';
+}
+MadCap|xref.caption:visited /* Changes the color of visited links; matches the _HP_IE_Experience styles. */
+{
+	color: #822980;
+}
+
+MadCap|relatedTopics
+{
+	mc-label: 'See Also';
+	/* Localizable */
+}
+
+/************************* Lists - Help *************************/
+ol li
+{
+	margin-bottom: 0.6em;
+}
+
+ul li
+{
+	margin-bottom: 0.6em;
+}
+
+ol li p,
+ul li p
+{
+	margin-bottom: 0.6em;
+}
+
+ul ul li p,
+ul ol li p,
+ol ul li p,
+ol ol li p
+{
+	margin-bottom: 0.6em;
+}
+
+ol ol ul ol li
+
+ul ul ul li p,
+ul ol ol li p,
+ul ul ol li p,
+ul ol ul li p,
+ol ul ul li p,
+ol ol ol li p,
+ol ul ol li p,
+ol ol ul li p
+{
+	margin-bottom: 0.6em;
+}
+
+ol ul li,
+ul ul li
+{
+	margin-bottom: 0.6em;
+}
+
+ol ol li,
+ul ol li
+{
+	margin-bottom: 0.6em;
+}
+
+/* Styles for reviewers */
+.review_added
+{
+	background-color: #beefff;
+	
+}
+.review_changed
+{
+	background-color: #ffe8bf; /*#dbffdb; *//* green */
+}
+.review_note
+{
+	background-color: #ffffaa;
+}
+.review_deleted
+{
+	background-color: #ffdddd;
+	text-decoration: line-through;
+	/*display: none;*/
+}
+
+.FAQ_heading
+{
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: italic;
+	page-break-after: avoid;
+}
+
+
+/* Top Navigation styles */
+
+/* Submenu styles so it does not appear above content */
+div.sideContent
+{
+	float: right;
+    margin-left: 10px;
+	margin-bottom: 10px;
+    width: 33.33%;
+}
+
+/* Styles for the font icons for the search bar */
+div.search-submit:before
+{
+	color: #ffffff;
+	font-family: font_icon;
+	content: "\e912";
+	position: absolute;
+	right: 20px; /* 7px */
+	top: 6px; /* 2px */
+	font-size: 18px; /* 13px */
+}
+div.search-submit:hover:before
+{
+	color: #01a982;
+}
+
+table.borderOff, table.borderOff th, table.borderOff td
+{
+	border: none;
+}
+
+div.indent, p.indent
+{
+	text-indent: 25px;
+}
+
+.highlight_text_red
+{
+	color: red;
+	font-style: italic;
+}
+
+.callout {
+	width: 25px;
+	height: 25px;
+	background: #f05332;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: black;
+	font-weight: bold;
+}
+
+/* End Top Navigation styles */
+
+
+/* Button styles for Domino GUIs */
+.btn-green, .btn-green-border, .btn-orange-border, .btn-grey-border {
+	font-weight: bold;
+	/*padding: 2px 10px 2px 10px;*/
+	padding: 1px 6px 1px 6px;
+	font-family: MetricRegular, MetricHPE, Arial;
+}
+.btn-green {
+	border: 2px #01a982 solid;
+	background: #01a982;
+	color: white;
+}
+.btn-green-border {
+	border: 2px #01a982 solid;
+	color: black;
+}
+.btn-orange-border {
+	border: 2px #ff8d6d solid;
+	color: black;
+}
+.btn-grey-border {
+	border: 2px #858585 solid;
+	color: black;
+}
+.MCDropDownBody {
+	overflow: visible;
+}
+
+
+
+@media print
+{
+	body
+	{
+		font-size: 10pt;
+	}
+	
+	/* Added for the 2.01.01 templates, so tables fit well with the new larger font size. */
+	table
+	{
+		font-size: 9pt;
+		width: 100%; /* Added specifically for the Release Notes so I don't have to change styles that may conflict with Support Matrix. */
+		font-family: inherit; /* So print output uses HPE Simplified font instead of Arial. */
+	}
+	th
+	{
+		font-family: inherit; /* So print output uses HPE Simplified font instead of Arial. */
+	}
+	
+	/* For when we single source, we don't have the results arrow in printed output. */
+	p.results
+	{
+		font-style: normal;
+		padding-left: inherit;
+		background-image: none;
+		background-repeat: inherit;
+		background-position: inherit;
+	}
+
+	span.captionStyle /* To turn off italics on the auto number text. */
+	{
+		font-style:normal;
+	}
+	
+	/* Adjusting out the excessive top margin in the TOC */
+	p.toc1
+	{
+		margin-top: 10pt;
+	}
+	
+
+	/************************* Headings - Print *************************/
+	
+	h2
+	{
+		padding-top: 0.0em;
+	}
+	
+	h1, h2, h3, h4
+	{
+		margin-top: 0.0em;
+		margin-bottom: 0.5em;
+	}
+
+	/************************* Lists - Print *************************/
+	ol li p,
+	ul li p
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul ul li p,
+	ul ol li p,
+	ol ul li p,
+	ol ol li p
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul ul ul li p,
+	ul ol ol li p,
+	ul ul ol li p,
+	ul ol ul li p,
+	ol ul ul li p,
+	ol ol ol li p,
+	ol ul ol li p,
+	ol ol ul li p
+	{
+		margin-bottom: 6pt;
+	}
+
+	ol li
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul li
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul ol li,
+	ol ol li
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul ul li,
+	ol ul li
+	{
+		margin-bottom: 6pt;
+	}
+
+	ol ol ol li,
+	ol ul ol li,
+	ul ol ol li,
+	ul ul ol li
+	{
+		margin-bottom: 6pt;
+	}
+
+	ul ul ul li,
+	ul ol ul li,
+	ol ul ul li,
+	ol ol ul li
+	{
+		margin-bottom: 6pt;
+	}
+	
+	/************************* Images - Print *************************/
+
+	img
+	{
+		max-width: 600px;
+	}
+	/* Used to automatically resize images. Would like to do this for WebHelp, but it doesn't work with image maps. */
+	ol li p img,
+	ul li p img
+	{
+		max-width: 574px;
+	}
+	ul ul li p img,
+	ul ol li p img,
+	ol ul li p img,
+	ol ol li p img
+	{
+		max-width: 552px;
+	}
+	ul ul ul li p img,
+	ul ol ol li p img,
+	ul ul ol li p img,
+	ul ol ul li p img,
+	ol ul ul li p img,
+	ol ol ol li p img,
+	ol ul ol li p img,
+	ol ol ul li p img
+	{
+		max-width: 522px;
+	}
+
+	/************************* Admonitions - Print *************************/
+
+	div.Admonition_Note, div.Admonition_Important, div.Admonition_Caution, div.Admonition_Tip
+	{
+		padding-bottom: 10px;
+		padding-right: 10px;
+	}
+	div.Admonition_Note
+	{
+		background-image: url("./graphics/_HP_AdmonitionIcon_Note.svg");
+	}
+	div.Admonition_Important
+	{
+		background-image: url("./graphics/_HP_AdmonitionIcon_Important.svg");
+	}
+	div.Admonition_Caution
+	{
+		background-image: url("./graphics/_HP_AdmonitionIcon_Caution.svg");
+	}
+	div.Admonition_Tip
+	{
+		background-image: url("./graphics/_HP_AdmonitionIcon_Tip.svg");
+	}
+
+	/************************* Caption Styles - Print *************************/
+	
+	/* Adds numbering to captions in PDF output. */
+	caption
+	{
+		mc-auto-number-format: 'CT:Table {chapnum}.{n+} '; /* Not applied in non-print output. */
+		mc-auto-number-class: 'captionStyle'; /* To turn off italics on the auto number text. */
+	}
+	p.caption_figure
+	{
+		page-break-after: avoid;
+		mc-auto-number-format: 'CF:Figure {chapnum}.{n+} '; /* Not applied in non-print output. */
+		mc-auto-number-class: 'captionStyle'; /* To turn off italics on the auto number text. */
+	}
+	p.caption_table /* Necessary for cross references to tables. */
+	{
+		page-break-after: avoid;
+		mc-auto-number-format: 'CT:Table {chapnum}.{n+} '; /* Not applied in non-print output. */
+		mc-auto-number-class: 'captionStyle'; /* To turn off italics on the auto number text. */
+	}
+
+	/************************* DropDown Styles - Print *************************/
+
+	/* Created for when you want to single source a dropDown in PDF output. The dropDownHead style will become an h2 in PDF. Designed for MDCG. */
+	MadCap|dropDownHotspot /* Override the color in the IE_Experience stylesheet. */
+	{
+		  color: #000000;
+	}
+	MadCap|dropDown.pdfH2 MadCap|dropDownHead
+	{
+		mc-heading-level: 2;
+		font-family: 'MetricHPE Medium', 'Metric Medium', Arial;
+		font-size: 23pt;	/*font-size: 200%;*/
+		page-break-after: avoid;
+		margin-bottom: .5em; /*QCCR1K4260 */
+	}
+	MadCap|dropDown.pdfH2 MadCap|dropDownBody MadCap|dropDownHead,
+	MadCap|dropDown.pdfH3 MadCap|dropDownHead
+	{
+		mc-heading-level: 3;
+		font-family: 'MetricHPE Medium', 'Metric Medium', Arial;
+		font-size: 20pt;	/*font-size: 1.80em;*/
+		page-break-after: avoid;
+		margin-bottom: .5em; /*QCCR1K4260 */
+	}
+	MadCap|dropDown.pdfH2 MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownHead,
+	MadCap|dropDown.pdfH3 MadCap|dropDownBody MadCap|dropDownHead
+	{
+		mc-heading-level: 4;
+		font-family: 'MetricHPE Medium', 'Metric Medium', Arial;
+		font-size: 17pt;	/*font-size: 1.60em;*/
+		page-break-after: avoid;
+	}
+	MadCap|dropDown.pdfH2 MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownHead,
+	MadCap|dropDown.pdfH3 MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownHead
+	{
+		mc-heading-level: 5;
+		font-family: 'MetricHPE Medium', 'Metric Medium', Arial;
+		font-size: 15pt;	/*font-size: 1.40em;*/
+		page-break-after: avoid;
+	}
+	MadCap|dropDown.pdfH2 MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownHead,
+	MadCap|dropDown.pdfH3 MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownBody MadCap|dropDownHead
+	{
+		mc-heading-level: 6;
+		font-family: 'MetricHPE Medium', 'Metric Medium', Arial;
+		font-size: 13pt;	/*font-size: 1.20em;*/
+		page-break-after: avoid;
+	}
+
+	/************************* Cross References - Print *************************/
+	/* So when you cross reference to a table or figure caption, it will also display the table/figure number. */
+	MadCap|xref.caption
+	{
+		color: #01a982;
+		mc-format: '{quote}{paranumonly} {para}{quote}';
+	}
+	
+	/* Make the links in the index blue so it's clear they are links. */
+	MadCap|xref.IndexPageNumber
+	{
+		color: #01a982;
+	}
+	
+	MadCap|footnotesBlock
+	{
+		border-top-color: #E5E8E8;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-top-length: 66%;
+		font-size: 90%;
+	}
+	
+	div.GlossaryPageHeading,
+	div.GlossaryPageDefinition,
+	div.GlossaryPageEntry,
+	div.GlossaryPageTerm
+	{
+		font-family: inherit; /* So print output uses HPE Simplified font instead of Arial. */
+	}
+	
+	table.avoid-break tr, /* Avoid rows breaking in tables */
+	tr
+	{
+		page-break-inside: avoid;
+	}
+	
+	/* Button styles for Domino GUIs */
+	.btn-green, .btn-green-border, .btn-orange-border, .btn-grey-border {
+		font-weight: bold;
+		padding: inherit;
+		font-family: inherit;
+	}
+	.btn-green {
+		border: none;
+		background: white;
+		color: inherit;
+	}
+	.btn-green-border {
+		border: none;
+		color: inherit;
+	}
+	.btn-orange-border {
+		border: none;
+		color: inherit;
+	}
+	.btn-grey-border {
+		border: none;
+		color: inherit;
+	}
+	.MCDropDownBody {
+		overflow: hidden;
+	}
+}

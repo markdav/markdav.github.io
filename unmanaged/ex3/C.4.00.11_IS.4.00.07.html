@@ -1,0 +1,649 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>HPE Synergy Firmware Comparison Tool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="toolscript.js"></script>
+<script type="text/javascript"> 
+		function myclick() {
+			var myLink = document.getElementById('export');
+
+			myLink.onclick = function () {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = "csvexport.js";
+				document.getElementsByTagName("head")[0].appendChild(script);
+				return false;
+			}
+			document.getElementById('export').click();
+		}
+
+
+</script>
+    </head><body id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72"><a name="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72"><!-- --></a>
+    <div class="sidenav">
+ <p class="navtitle" style="margin-bottom:10px; margin-top:-10px;">HPE Synergy Software Release Information</p>
+    <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+ <ul class="navbar" style="margin-top: 10px; margin-left: -35px"><li class="navsectiontitle" style="list-style-type:none; margin-bottom:30px">HPE SYNERGY SOFTWARE OVERVIEW &amp; DOWNLOADS</li>
+                                <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px">
+                <a href="index.html">HPE Synergy Software Releases - Overview</a>
+                </li>
+                                    <li style="margin-bottom:10px"><a href="Whats_New.html" >HPE Synergy Software Releases - What's New?</a></li>
+	 </ul>
+   <br>
+ <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type:none; margin-bottom:20px">HPE SYNERGY SOFTWARE RELEASE TOOLS</li>
+    <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px"><a href="Firmware_Comparison_Tool.html" class="open">HPE Synergy Firmware Comparison Tool</a></li>
+    <li style="margin-bottom:10px"><a href="Firmware_Feature_Table.html" >HPE Synergy Firmware Feature Comparison Table</a></li>
+    <li style="margin-bottom:10px"><a href="Upgrade_Table.html">HPE Synergy Upgrade Paths</a></li>
+    <li style="margin-bottom:10px"><a href="VMware_Support.html">VMware OS Support for HPE Synergy</a></li>
+</ul>
+   <br>
+                                
+<div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type: none; margin-bottom:10px">OTHER RESOURCES</li>
+<ul style="list-style-type: none; margin-left: -30px;">
+    <li><a href="EOS_Upgrade_Paths.html">Upgrade Paths for Past HPE Synergy Releases</a></li>
+    <li><a href="Identifying_upgrade_paths.html">Identifying Upgrade Paths</a></li>
+    <li><a href="Resources.html">HPE Synergy Resources</a></li>
+    <li><a class="xref external" href="http://www.hpe.com/info/synergy-docs" target="_blank">Hewlett Packard Enterprise Information Library</a></li>
+     </ul></ul>
+ 
+
+
+</div><div class="main">
+    <main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">HPE Synergy Firmware Comparison Tool</h1><div class="body refbody"><section class="section" id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><a name="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><!-- --></a><h2 class="title sectiontitle">Selecting HPE Synergy Custom SPPs</h2> 
+		 
+		<p class="p"> Selected management combination: 
+		</p> 
+		<p class="p"><strong class="ph b">HPE Synergy Composer version 4.00.11 / HPE Synergy Image Streamer version 4.00.07 
+		  </strong> 
+		</p> 
+		<p class="p">To select a different management combination, click 
+		  <strong class="ph b"><a class="xref standard" href="Firmware_Comparison_Tool.html">here</a></strong>. 
+		</p> 
+		<p class="p"> Use the drop down menus below to select HPE Synergy Custom SPPs associated with the selected management combination. 
+		</p> 
+		<div class="p"> 
+		  <div style="width:100%; margin-top:1em"></div><div class="notetitle"></div><div class="note note"><span style="font-weight:bold">NOTE: </span><p class="p">The recommended HPE Synergy Custom SPP is listed below as default. HPE Synergy Custom SPPs marked with an asterisk (*) or 
+				<cite class="cite">italics</cite> are near end or support life or are no longer supported. 
+			 </p></div> 
+		</div> 
+		<p class="p">The 
+		  <strong class="ph b">Export to CSV</strong> function is not compatible with Internet Explorer. 
+		</p> 
+		<div class="tablenoborder"><a name="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__TABLE_7BEC27C7C17E4C9193DA0A78588E84E6"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__TABLE_7BEC27C7C17E4C9193DA0A78588E84E6" class="table toolstable" frame="void" border="0" rules="none"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><tbody class="tbody" brand="HPE-Metric"><tr isThead="nothead" class="row feature"><td class="entry nocellnorowborder tablefunctions" style="vertical-align:bottom" >
+            
+            <input type="search" class="tableFilter" data-table="tableintopic" placeholder="Type a keyword to filter table" style="margin-bottom: 0px; width: 250px; height: 30px; background-image: url(searchicon.png); background-position:left; background-repeat: no-repeat; background-position:left; background-size: contain; padding: 0px 30px" >
+            
+            <p><strong><input type="checkbox" style=" margin-top: 10px; margin-right:-80px; margin-left:-95px; " >Show firmware differences</strong></p>
+<p><a href="javascript:window.print()" class="printbtn" style="float: left; margin-left: 0px; margin-bottom: 10px; margin-top: auto; margin-right:5px">PRINT TABLE</a>
+										
+<a href='#' id="export" onclick="myclick()" class="exportbtn" style="float:left ; margin-left: 0px; margin-bottom: 10px; margin-top: auto">EXPORT TO .CSV</a>
+
+</p><br><br></td><td class="entry nocellnorowborder selectorone" style="text-align:left;"><p class="p"><strong class="b one">Selected HPE Synergy Custom SPP 
+						</strong> 
+					 </p><select id="one"><option value="One"><p class="p">2018.03.20180928* 
+						  </p></option><option value="Two"><p class="p">2018.03.20180628* 
+						  </p></option><option value="Three"><p class="p">2018.03.20180508* 
+						  </p></option><option value="Four"><p class="p">2017.10.20180324* 
+						  </p></option><option value="Five"><p class="p">2017.10.20171215SROM* 
+						  </p></option><option value="Six"><p class="p">2017.10.20171215* 
+						  </p></option><option value="Seven"><p class="p">2017.10.20180323* 
+						  </p></option><option value="Eight"><p class="p">2017.10.20171206SROM* 
+						  </p></option><option value="Nine"><p class="p">2017.10.20171206* 
+						  </p></option><option value="Ten"><p class="p">2017.10.20171108* 
+						  </p></option><option value="Eleven"><p class="p">2017.07.20170920* 
+						  </p></option><option value="Twelve"><p class="p">2017.07.20170721* 
+						  </p></option></select></td><td class="entry nocellnorowborder selectortwo" style="text-align:left;"><p class="p"><strong class="ph b two">Selected HPE Synergy Custom SPP 
+						</strong> 
+					 </p><select id="two"><option value="Empty"><p class="p">Select an HPE Synergy Custom SPP to compare 
+						  </p></option><option value="One"><p class="p">2018.03.20180928* 
+						  </p></option><option value="Two"><p class="p">2018.03.20180628* 
+						  </p></option><option value="Three"><p class="p">2018.03.20180508* 
+						  </p></option><option value="Four"><p class="p">2017.10.20180324* 
+						  </p></option><option value="Five"><p class="p">2017.10.20171215SROM* 
+						  </p></option><option value="Six"><p class="p">2017.10.20171215* 
+						  </p></option><option value="Seven"><p class="p">2017.10.20180323* 
+						  </p></option><option value="Eight"><p class="p">2017.10.20171206SROM* 
+						  </p></option><option value="Nine"><p class="p">2017.10.20171206* 
+						  </p></option><option value="Ten"><p class="p">2017.10.20171108* 
+						  </p></option><option value="Eleven"><p class="p">2017.07.20170920* 
+						  </p></option><option value="Twelve"><p class="p">2017.07.20170721* 
+						  </p></option></select></td></tr></tbody></table></div> 
+		<div class="p"> 
+		<div class="tablenoborder"><a name="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__TABLE_A85F473E7FD5497F8B051E1817346EEE"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__TABLE_A85F473E7FD5497F8B051E1817346EEE" class="table tableintopic" frame="above" border="1" rules="rows"><colgroup><col style="width:6.896551724137931%"><col style="width:10.344827586206897%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"><col style="width:6.896551724137931%"></colgroup><thead class="thead" style="text-align:left;"><tr isThead="nothead" class="row"><th class="entry nocellnorowborder" id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER" style="text-align:center;"><p class="p">Synergy Custom SPP Version 
+					 </p><p class="p">REPORTED AS 
+					 </p><p class="p">Part Number 
+					 </p></th><th class="entry nocellnorowborder ColumnOne" style="text-align:center;" id="d42936e194"><p class="p"><cite class="cite">2018.03.20180928 
+						</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 03 2018 09 28 
+					 </p><p class="p">Z7550-96561 
+					 </p></th><th class="entry nocellnorowborder ColumnTwo" id="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE" style="text-align:center;"><p class="p"><cite class="cite">2018.03.20180628 
+						</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 03 2018 06 28 
+					 </p><p class="p">Z7550-96517 
+					 </p></th><th class="entry nocellnorowborder ColumnThree" style="text-align:center;" id="d42936e212"><p class="p"><cite class="cite">2018.03.20180508 
+						</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 03 2018 05 08 
+					 </p><p class="p">Z7550-96479 
+					 </p></th><th class="entry nocellnorowborder ColumnFour" style="text-align:center;" id="d42936e221"><p class="p"><cite class="cite">2017.10.20180324</cite> 
+					 </p><p class="p"> HPE Synergy Custom SPP 2017 10 2018 3 24 
+					 </p><p class="p">Z7550-96494 
+					 </p></th><th class="entry nocellnorowborder ColumnFive" style="text-align:center;" id="d42936e230"><p class="p"><cite class="cite">2017.10.20171215SROM</cite> 
+					 </p><p class="p">2017_1215SROM 10 01, 2017.10.01.00 
+					 </p><p class="p">Z7550-96460 
+					 </p></th><th class="entry nocellnorowborder ColumnSix" style="text-align:center;" id="d42936e239"><p class="p"><cite class="cite">2017.10.20171215</cite> 
+					 </p><p class="p"> HPE Synergy Custom SPP 2017 12 20 2017.12.20 
+					 </p><p class="p">Z7550-96455 
+					 </p></th><th class="entry nocellnorowborder ColumnSeven" style="text-align:center;" id="d42936e248"><p class="p"><cite class="cite">2017.10.20180323</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2017 10 2018 3 23 
+					 </p><p class="p">Z7550-96493 
+					 </p></th><th class="entry nocellnorowborder ColumnEight" style="text-align:center;" id="d42936e257"><p class="p"><cite class="cite">2017.10.20171206SROM</cite> 
+					 </p><p class="p"> 2017_1206SROM 2017 10 1 2017.10.01.00 
+					 </p><p class="p">Z7550-96461 
+					 </p></th><th class="entry nocellnorowborder ColumnNine" style="text-align:center;" id="d42936e266"><p class="p"><cite class="cite">2017.10.20171206</cite> 
+					 </p><p class="p"> HPE Synergy Custom SPP 2017 12 06 2017.12.06.00 
+					 </p><p class="p"> Z7550-96454 
+					 </p></th><th class="entry nocellnorowborder ColumnTen" style="text-align:center;" id="d42936e275"><p class="p"><cite class="cite">2017.10.20171108</cite> 
+					 </p><p class="p"> 
+					 </p><p class="p">Z7550-96444 
+					 </p></th><th class="entry nocellnorowborder ColumnEleven" style="text-align:center;" id="d42936e285"><p class="p"><cite class="cite">2017.07.20170920</cite> 
+					 </p><p class="p"> 
+					 </p><p class="p">Z7550-96436 
+					 </p></th><th class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" id="d42936e294"><p class="p"><cite class="cite">2017.07.20170721</cite> 
+					 </p><p class="p"> 
+					 </p><p class="p">Z7550-96415 
+					 </p></th><th class="entry nocellnorowborder Empty" style="text-align:center;" id="d42936e303"><p class="p">Select an HPE Synergy Custom SPP to compare 
+					 </p></th></tr></thead><tbody class="tbody" brand="HPE-Metric"><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 480 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> I37 v2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> I37 v2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> I37 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> I37 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> I37 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> I37 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> I37 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> I37 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> I37 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> I37 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> I37 v2.40 02/17/2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> I37 v2.40 02/17/2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 660 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> I39 v2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> I39 v2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> I39 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> I39 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> I39 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> I39 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> I39 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> I39 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> I39 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> I39 v2.52 10/25/2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> I39 v2.40 02/17/2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> I39 v2.40 02/17/2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 620/680 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> I40 v2.60 05/23/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> I40 v2.60 05/23/2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> I40 v2.56 01/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> I40 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> I40 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> I40 v2.50 10/01/2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> I40 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> I40 v2.56 1/22/2018 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> I40 v2.50 10/02/2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> I40 v2.50 10/02/2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> I40 v2.42 04/05/2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> I40 v2.42 04/05/2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 660 Gen10 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> I43 v1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> I43 v1.36 2/14/2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> I43 v1.36 2/14/2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> I43 v1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> I43 v1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> I43 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> I43 v1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> I43 v1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> I43 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> I43 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> I43 v1.20 06/01/2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> I43 v1.20 06/01/2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 480 Gen10 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> I42 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> I42 1.36 2/14/2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> I42 1.36 2/14/2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> I42 1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> I42 1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> I42 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> I42 1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> I42 1.32 2/1/2018 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> I42 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> I42 v1.26 11/14/2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> I42 v1.20 06/01/2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> I42 v1.20 06/01/2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b">HPE Synergy Frame Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 2.02.03 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 2.02.03 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 2.02.02 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 2.01.01 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 2 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Smart Array SR Gen10 Controllers 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.60 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.34 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.34 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.34 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.04(B) 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.0.4(B) 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.34 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.0.4(B) 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.0.4(B) 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.0.4(B) 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.04 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE H240nr Smart Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 5.52 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 5.52 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><p class="p"><strong class="ph b">HPE Smart Array Gen9 Controllers 
+						</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 6.06 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 5.52 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 5.52 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 3820C 10/20Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 7.15.37 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 7.15.37 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> ESXi HPE Synergy 3820C 10/20Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.1-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.1-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 2820C 10Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 7.15.68 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> FW 7.15.65 (for offline update for ESXi systems) Windows/Linux FW: 7.15.64 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 7.15.37 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 7.15.37 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> ESXi HPE Synergy 2820C 10Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.1-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.1-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> ESXi 6.0: 2.713.60.v60.1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> brcm_drv_v60.713.39 HPE Qlogic NX2 10/20 GbE Multifunction Driver for VMware vSphere 6.0 2018.02.12 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 3830 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 6.01.50 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 6.01.50 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 6.01.50 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 6.01.41 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 6.01.36 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 6.01.36 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 3530 C 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 11.4.225.21 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 11.4.225.21 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 11.4.225.21 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 11.2.307.16 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 11.2.254.14 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 11.2.254.14 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> Gen9 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 ">— 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b">HPE Integrated Lights Out 4 (HPE iLO 4) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 2.60 May 23 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 2.55 Aug 16 2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 2.54 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Integrated Lights Out 5 (HPE iLO 5) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.30 May 31 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.22 Mar 6 2018 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.22 Mar 6 2018 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.15 Aug 17 2017 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.10 Jun 07 2017 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.10 Jun 07 2017 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> Gen10 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.04 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.0.2 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 ">— 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Virtual Connect SE 40Gb F8 Module for Synergy</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.2.3.1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.2.2-1001 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.2.2-1001 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.2.0.1005 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.2.0.1005 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.2.0.1005 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.1.0.1010 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.1.0.1010 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Virtual Connect SE 16Gb FC Module for Synergy</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.05.24 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 12Gb SAS Connection Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.1.5.0 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.1.5.0 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy D3940 Storage Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 2.07(B) 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 2.07 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 20Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.08 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 10Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.08 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> Included in Synergy Custom SPP and not managed by OneView 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne boldline" style="text-align:center;" headers="d42936e194 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwo boldline" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE ">&nbsp;</td><td class="entry nocellnorowborder ColumnThree  boldline" style="text-align:center;" headers="d42936e212 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFour  boldline" style="text-align:center;" headers="d42936e221 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFive  boldline" style="text-align:center;" headers="d42936e230 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSix  boldline" style="text-align:center;" headers="d42936e239 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeven  boldline" style="text-align:center;" headers="d42936e248 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEight  boldline" style="text-align:center;" headers="d42936e257 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNine  boldline" style="text-align:center;" headers="d42936e266 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTen  boldline" style="text-align:center;" headers="d42936e275 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEleven  boldline" style="text-align:center;" headers="d42936e285 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwelve  boldline" style="text-align:center;" headers="d42936e294 ">&nbsp;</td><td class="entry nocellnorowborder Empty  boldline" style="text-align:center;" headers="d42936e303 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 10Gb Pass Thru Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 ">— 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> Not Included in the Synergy Custom SPP 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne  boldline" style="text-align:center;" headers="d42936e194 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwo boldline" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE ">&nbsp;</td><td class="entry nocellnorowborder ColumnThree boldline" style="text-align:center;" headers="d42936e212 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFour  boldline" style="text-align:center;" headers="d42936e221 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFive  boldline" style="text-align:center;" headers="d42936e230 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSix  boldline" style="text-align:center;" headers="d42936e239 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeven  boldline" style="text-align:center;" headers="d42936e248 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEight  boldline" style="text-align:center;" headers="d42936e257 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNine  boldline" style="text-align:center;" headers="d42936e266 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTen  boldline" style="text-align:center;" headers="d42936e275 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEleven  boldline" style="text-align:center;" headers="d42936e285 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwelve  boldline" style="text-align:center;" headers="d42936e294 ">&nbsp;</td><td class="entry nocellnorowborder Empty  boldline" style="text-align:center;" headers="d42936e303 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HPE Synergy 40Gb F8 Switch Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 1.2.3.1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 1.2.2.1001 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 1.2.2.1001 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 1.1.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 1.1.0.1010 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 1.1.0.1010 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> Intelligent Provisioning (Gen10) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 3.10 Build 189 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 3.10 Build 189 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 3.10 Build 189 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 3.00 Build 382 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><strong class="ph b"> HP Intelligent Provisioning (Gen9) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><p class="p"><strong class="ph b">Brocade 16Gb/12 Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 ">8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE ">— 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 ">— 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 ">— 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><p class="p"><strong class="ph b">Brocade 16Gb/24 Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 ">8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE ">— 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 ">— 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 ">— 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__LEFTHEADER "><p class="p"><strong class="ph b">Brocade 16Gb/24 Power Pack+ Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d42936e194 ">8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="GUID-1595A49B-6378-406C-A8DB-15A2A3394C72__ONE ">— 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d42936e212 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d42936e221 ">— 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d42936e230 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d42936e239 ">— 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d42936e248 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d42936e257 ">— 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d42936e266 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d42936e275 ">— 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d42936e285 ">— 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d42936e294 ">— 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d42936e303 ">— 
+				  </td></tr></tbody></table></div> 
+		</div> 
+	 </section></div></article></main></div><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script></body></html>

@@ -1,0 +1,1456 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>HPE Synergy Firmware Comparison Tool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="toolscript.js"></script>
+<script type="text/javascript"> 
+		function myclick() {
+			var myLink = document.getElementById('export');
+
+			myLink.onclick = function () {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = "csvexport.js";
+				document.getElementsByTagName("head")[0].appendChild(script);
+				return false;
+			}
+			document.getElementById('export').click();
+		}
+
+</script>
+
+    </head><body id="GUID-E4C77503-750C-41E1-945A-259DF87EE40D"><a name="GUID-E4C77503-750C-41E1-945A-259DF87EE40D"><!-- --></a>
+    <div class="sidenav">
+ <p class="navtitle" style="margin-bottom:10px; margin-top:-10px;">HPE Synergy Software Release Information</p>
+    <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+ <ul class="navbar" style="margin-top: 10px; margin-left: -35px"><li class="navsectiontitle" style="list-style-type:none; margin-bottom:30px">HPE SYNERGY SOFTWARE OVERVIEW &amp; DOWNLOADS</li>
+                                <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px">
+                <a href="index.html">HPE Synergy Software Releases - Overview</a>
+                </li>
+                                    <li style="margin-bottom:10px"><a href="Whats_New.html" >HPE Synergy Software Releases - What's New?</a></li>
+	 </ul>
+   <br>
+ <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type:none; margin-bottom:20px">HPE SYNERGY SOFTWARE RELEASE TOOLS</li>
+    <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px"><a href="Firmware_Comparison_Tool.html" class="open">HPE Synergy Firmware Comparison Tool</a></li>
+    <li style="margin-bottom:10px"><a href="Firmware_Feature_Table.html" >HPE Synergy Firmware Feature Comparison Table</a></li>
+    <li style="margin-bottom:10px"><a href="Upgrade_Table.html">HPE Synergy Upgrade Paths</a></li>
+    <li style="margin-bottom:10px"><a href="VMware_Support.html">VMware OS Support for HPE Synergy</a></li>
+</ul>
+   <br>
+                                
+<div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type: none; margin-bottom:10px">OTHER RESOURCES</li>
+<ul style="list-style-type: none; margin-left: -30px;">
+    <li><a href="EOS_Upgrade_Paths.html">Upgrade Paths for Past HPE Synergy Releases</a></li>
+    <li><a href="Identifying_upgrade_paths.html">Identifying Upgrade Paths</a></li>
+    <li><a href="Resources.html">HPE Synergy Resources</a></li>
+    <li><a class="xref external" href="http://www.hpe.com/info/synergy-docs" target="_blank">Hewlett Packard Enterprise Information Library</a></li>
+     </ul></ul>
+ 
+
+
+</div><div class="main">
+    <main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">HPE Synergy Firmware Comparison Tool</h1><div class="body refbody"><section class="section" id="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><a name="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><!-- --></a><h2 class="title sectiontitle">Selecting HPE Synergy Custom SPPs</h2> 
+		 
+		<p class="p"> Selected management combination: 
+		</p> 
+		<p class="p"><strong class="ph b">HPE Synergy Composer version 5.0 / HPE Synergy Image Streamer version 5.0 
+		  </strong> 
+		</p> 
+		<p class="p">To select a different management combination, click 
+		  <strong class="ph b"><a class="xref standard" href="Firmware_Comparison_Tool.html">here</a></strong>. 
+		</p> 
+		<p class="p"> Use the drop down menus below to select HPE Synergy Custom SPPs associated with the selected management combination. 
+		</p> 
+		<div class="p"> 
+		  <div style="width:100%; margin-top:1em"></div><div class="notetitle"></div><div class="note note"><span style="font-weight:bold">NOTE: </span><p class="p">The recommended HPE Synergy Custom SPP is listed below as default. HPE Synergy Custom SPPs marked with an asterisk (*) or 
+				<cite class="cite">italics</cite> are near end of support life or are no longer supported. 
+			 </p></div> 
+		</div> 
+		<p class="p">The 
+		  <strong class="ph b">Export to CSV</strong> function is not compatible with Internet Explorer. 
+		</p> 
+		<div class="p"> 
+		<div class="tablenoborder"><a name="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__TABLE_7BEC27C7C17E4C9193DA0A78588E84E6"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__TABLE_7BEC27C7C17E4C9193DA0A78588E84E6" class="table toolstable" frame="void" border="0" rules="none"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><tbody class="tbody" brand="HPE-Metric"><tr isThead="nothead" class="row feature"><td class="entry nocellnorowborder tablefunctions" style="vertical-align:bottom" >
+            
+            <input type="search" class="tableFilter" data-table="tableintopic" placeholder="Type a keyword to filter table" style="margin-bottom: 0px; width: 250px; height: 30px; background-image: url(searchicon.png); background-position:left; background-repeat: no-repeat; background-position:left; background-size: contain; padding: 0px 30px" >
+            
+            <p><strong><input type="checkbox" style=" margin-top: 10px; margin-right:-80px; margin-left:-95px; " >Show firmware differences</strong></p>
+<p><a href="javascript:window.print()" class="printbtn" style="float: left; margin-left: 0px; margin-bottom: 10px; margin-top: auto; margin-right:5px">PRINT TABLE</a>
+										
+<a href='#' id="export" onclick="myclick()" class="exportbtn" style="float:left ; margin-left: 0px; margin-bottom: 10px; margin-top: auto">EXPORT TO .CSV</a>
+
+</p><br><br></td><td class="entry nocellnorowborder selectorone" style="text-align:left;"><p class="p"><strong class="b one">Selected HPE Synergy Custom SPP 
+						</strong> 
+					 </p><select id="one"><option value="One"><p class="p">2019.12.20200326 
+						  </p></option><option value="Two"><p class="p">2019.09.20200325 
+						  </p></option><option value="Three"><p class="p">2019.03.20200324 
+						  </p></option><option value="Four"><p class="p">2019.12.20200125 
+						  </p></option><option value="Five"><p class="p">2019.12.20200124 
+						  </p></option><option value="Six"><p class="p">2019.12.20191219* 
+						  </p></option><option value="Seven"><p class="p">2019.09.20190926 
+						  </p></option><option value="Eight"><p class="p">2019.09.20190925 
+						  </p></option><option value="Nine"><p class="p">2019.03.20200123 
+						  </p></option><option value="Ten"><p class="p">2019.03.20190826 
+						  </p></option><option value="Eleven"><p class="p">2019.03.20191029 
+						  </p></option><option value="Twelve"><p class="p">2019.03.20190825* 
+						  </p></option><option value="Thirteen"><p class="p">2019.03.20190718* 
+						  </p></option><option value="Fourteen"><p class="p">2019.03.20190612* 
+						  </p></option><option value="Fifteen"><p class="p">2019.03.20190514* 
+						  </p></option><option value="Sixteen"><p class="p">2019.03.20190401* 
+						  </p></option><option value="Seventeen"><p class="p">2018.11.20190611* 
+						  </p></option><option value="Eighteen"><p class="p">2018.11.20190405* 
+						  </p></option><option value="Nineteen"><p class="p">2018.11.20190205* 
+						  </p></option><option value="Twenty"><p class="p">2018.11.20181205* 
+						  </p></option><option value="Twentyone"><p class="p">2018.03.20180928* 
+						  </p></option><option value="Twentytwo"><p class="p">2018.09.20180919* 
+						  </p></option><option value="Twentythree"><p class="p">2018.06.20180709* 
+						  </p></option></select></td><td class="entry nocellnorowborder selectortwo" style="text-align:left;"><p class="p"><strong class="b two">Selected HPE Synergy Custom SPP 
+						</strong> 
+					 </p><select id="two"><option value="Empty"><p class="p">Select an HPE Synergy Custom SPP to compare 
+						  </p></option><option value="One"><p class="p">2019.12.20200326 
+						  </p></option><option value="Two"><p class="p">2019.09.20200325 
+						  </p></option><option value="Three"><p class="p">2019.03.20200324 
+						  </p></option><option value="Four"><p class="p">2019.12.20200125 
+						  </p></option><option value="Five"><p class="p">2019.12.20200124 
+						  </p></option><option value="Six"><p class="p">2019.12.20191219* 
+						  </p></option><option value="Seven"><p class="p">2019.09.20190926 
+						  </p></option><option value="Eight"><p class="p">2019.09.20190925 
+						  </p></option><option value="Nine"><p class="p">2019.03.20200123 
+						  </p></option><option value="Ten"><p class="p">2019.03.20190826 
+						  </p></option><option value="Eleven"><p class="p">2019.03.20191029 
+						  </p></option><option value="Twelve"><p class="p">2019.03.20190825* 
+						  </p></option><option value="Thirteen"><p class="p">2019.03.20190718* 
+						  </p></option><option value="Fourteen"><p class="p">2019.03.20190612* 
+						  </p></option><option value="Fifteen"><p class="p">2019.03.20190514* 
+						  </p></option><option value="Sixteen"><p class="p">2019.03.20190401* 
+						  </p></option><option value="Seventeen"><p class="p">2018.11.20190611* 
+						  </p></option><option value="Eighteen"><p class="p">2018.11.20190405* 
+						  </p></option><option value="Nineteen"><p class="p">2018.11.20190205* 
+						  </p></option><option value="Twenty"><p class="p">2018.11.20181205* 
+						  </p></option><option value="Twentyone"><p class="p">2018.03.20180928* 
+						  </p></option><option value="Twentytwo"><p class="p">2018.09.20180919* 
+						  </p></option><option value="Twentythree"><p class="p">2018.06.20180709* 
+						  </p></option></select></td></tr></tbody></table></div> 
+		</div> 
+		<div class="p"> 
+		<div class="tablenoborder"><a name="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__TABLE_47CA3DEC98F24CB28D07360F9F629040"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-E4C77503-750C-41E1-945A-259DF87EE40D__TABLE_47CA3DEC98F24CB28D07360F9F629040" class="table tableintopic" frame="above" border="1" rules="rows"><colgroup><col style="width:5.104166666666666%"><col style="width:3.541666666666666%"><col style="width:3.472222222222222%"><col style="width:3.541666666666666%"><col style="width:3.472222222222222%"><col style="width:3.472222222222222%"><col style="width:3.472222222222222%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.166666666666666%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.166666666666666%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:4.166666666666666%"><col style="width:4.131944444444444%"><col style="width:4.166666666666666%"><col style="width:4.131944444444444%"><col style="width:4.131944444444444%"><col style="width:3.541666666666666%"></colgroup><thead class="thead" style="text-align:left;"><tr isThead="nothead" class="row"><th class="entry nocellnorowborder" style="text-align:center;" id="d205687e270"><p class="p">Synergy Custom SPP Version 
+					 </p><p class="p">REPORTED AS 
+					 </p><p class="p">Part Number 
+					 </p></th><th class="entry nocellnorowborder ColumnOne" style="text-align:center;" id="d205687e277"><p class="p">2019.12.20200326 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 12 2020 0326 
+					 </p><p class="p"> Z7550-96866 
+					 </p></th><th class="entry nocellnorowborder ColumnTwo" style="text-align:center;" id="d205687e284"><p class="p">2019.09.20200325 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 09 2020 0325 
+					 </p><p class="p"> Z7550-96865 
+					 </p></th><th class="entry nocellnorowborder ColumnThree" style="text-align:center;" id="d205687e291"><p class="p">2019.03.20200324 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2020 0324 
+					 </p><p class="p"> Z7550-96864 
+					 </p></th><th class="entry nocellnorowborder ColumnFour" style="text-align:center;" id="d205687e298"><p class="p">2019.12.20200125 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 12 2020 0125 
+					 </p><p class="p">Z7550-96824 
+					 </p></th><th class="entry nocellnorowborder ColumnFive" style="text-align:center;" id="d205687e305"><p class="p">2019.12.20200124 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 12 2020 0124 
+					 </p><p class="p">Z7550-96826 
+					 </p></th><th class="entry nocellnorowborder ColumnSix" style="text-align:center;" id="d205687e312"><p class="p"><cite class="cite">2019.12.20191219</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 12 2019 1219 
+					 </p><p class="p">Z7550-96800 
+					 </p></th><th class="entry nocellnorowborder ColumnSeven" style="text-align:center;" id="d205687e321"><p class="p">2019.09.20190926 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 09 2019 0926 
+					 </p><p class="p">Z7550-96770 
+					 </p></th><th class="entry nocellnorowborder ColumnEight" style="text-align:center;" id="d205687e328"><p class="p">2019.09.20190925 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 09 2019 0925 
+					 </p><p class="p">Z7550-96769 
+					 </p></th><th class="entry nocellnorowborder ColumnNine" style="text-align:center;" id="d205687e335"><p class="p">2019.03.20200123 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2020 0123 
+					 </p><p class="p">Z7550-96825 
+					 </p></th><th class="entry nocellnorowborder ColumnTen" style="text-align:center;" id="d205687e342"><p class="p">2019.03.20190826 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0826 
+					 </p><p class="p">Z7550-96736 
+					 </p></th><th class="entry nocellnorowborder ColumnEleven" style="text-align:center;" id="d205687e350"><p class="p">2019.03.20191029 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 1029 
+					 </p><p class="p">Z7550-96792 
+					 </p></th><th class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" id="d205687e357"><p class="p"><cite class="cite">2019.03.20190825</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0825 
+					 </p><p class="p">Z7550-96751 
+					 </p></th><th class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" id="d205687e366"><p class="p"><cite class="cite">2019.03.20190718</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0718 
+					 </p><p class="p">Z7550-96734 
+					 </p></th><th class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" id="d205687e375"><p class="p"><cite class="cite">2019.03.20190612</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0612 
+					 </p><p class="p">Z7550-96730 
+					 </p></th><th class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" id="d205687e384"><p class="p"><cite class="cite">2019.03.20190514</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0514 
+					 </p><p class="p">Z7550-96680 
+					 </p></th><th class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" id="d205687e393"><p class="p"><cite class="cite">2019.03.2019040</cite>1 
+					 </p><p class="p">HPE Synergy Custom SPP 2019 03 2019 0430 
+					 </p><p class="p">Z7550-96616 
+					 </p></th><th class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" id="d205687e402"><p class="p"><cite class="cite">2018.11.20190611</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 11 2019 0611 
+					 </p><p class="p">Z7550-96729 
+					 </p></th><th class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" id="d205687e411"><p class="p"><cite class="cite">2018.11.20190405</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 11 2019 0405 
+					 </p><p class="p">Z7550-96678 
+					 </p></th><th class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" id="d205687e420"><p class="p"><cite class="cite">2018.11.20190205</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 11 2019 0215 
+					 </p><p class="p">Z7550-96592 
+					 </p></th><th class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" id="d205687e429"><p class="p"><cite class="cite">2018.11.20181205</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 11 2018 1205 
+					 </p><p class="p">Z7550-96591 
+					 </p></th><th class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" id="d205687e438"><p class="p"><cite class="cite">2018.03.20180928 
+						</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 03 2018 09 28 
+					 </p><p class="p">Z7550-96561 
+					 </p></th><th class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" id="d205687e448"><p class="p"><cite class="cite">2018.09.20180919 
+						</cite> 
+					 </p><p class="p">HPE Synergy Custom SPP 2018 09 2018 09 19 
+					 </p><p class="p">Z7550-96560 
+					 </p></th><th class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" id="d205687e457"><p class="p"><cite class="cite">2018.06.20180709 
+						</cite> 
+					 </p><p class="p"> HPE Synergy Custom SPP 2018 06 2018 07 09 
+					 </p><p class="p">Z7550-96524 
+					 </p></th><th class="entry nocellnorowborder Empty" style="text-align:center;" id="d205687e466"><p class="p">Select an HPE Synergy Custom SPP to compare 
+					 </p></th></tr></thead><tbody class="tbody" brand="HPE-Metric"><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> System ROM HPE Synergy 480 Gen9 Compute Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> I37 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> I37 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> I37 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> I37 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> I37 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> I37 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> I37 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> I37 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> I37 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> I37 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> System ROM HPE Synergy 660 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> I39 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> I39 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> I39 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> I37 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> I39 2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> I39 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> I39 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> I39 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> I39 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> I39 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> I39 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> I39 v2.64 10/17/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> I39 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> I39 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> I39 2.60 05/21/2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> System ROM HPE Synergy 620/680 Gen9 Compute Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> I40 v2.76 10/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> I40 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> I40 v2.74 07/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> I40 v2.62 10/11/2018 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> I40 v2.72 03/25/2019 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> I40 v2.62 10/11/2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> I40 v2.62 10/11/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> I40 v2.62 10/11/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> I40 2.60 05/23/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> I40 2.60 05/23/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> I40 2.60 05/23/2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> System ROM HPE Synergy 660 Gen10 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> I43 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> I43 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> I43 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> I43 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> I43 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> I43 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> I43 v2.14 08/16/2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> I43 v2.14 08/16/2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> I43 v2.10 05/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> I43 v2.10 05/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> I43 v2.10 05/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> I43 v2.10 05/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> I43 v2.10 05/21/2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> I43 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> I43 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> I43 v2.00 02/02/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> I43 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> I43 v1.50 12/29/2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> I43 v1.50 12/29/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> I43 v1.46 10/02/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> I43 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> I43 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> I43 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> System ROM HPE Synergy 480 Gen10 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> I42 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> I42 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> I42 v2.32 03/09/2020 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> I42 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> I42 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> I42 v2.22 11/13/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> I42 v2.14 08/16/2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> I42 v2.14 08/16/2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> I42 v2.10 05/22/2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> I42 v2.10 05/22/2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> I42 v2.10 05/22/2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> I42 v2.10 05/22/2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> I42 v2.10 05/22/2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> I42 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> I42 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> I42 v2.00 02/02/2019 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> I42 v2.04 04/18/2019 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> I42 v1.50 12/29/2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> I42 v1.50 12/29/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> I42 v1.46 10/05/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> I42 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> I42 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> I42 1.42 06/20/2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy Frame Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 3.01.00 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 3.00.00 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 3.01.00 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 3.01.00 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 3.01.00 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 3.00.00 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 3.00.00 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 3.00.00 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 2.04.00 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 2.02.04 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 2.02.04 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 2.02.04 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 2.02.04 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 2.02.03 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 2.02.03 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 2.02.03 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Smart Array SR Gen10 Controllers 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 2.65 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 2.65 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 2.65 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.98 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.98 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.99 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.65 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.65 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.65 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.60 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.65 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.34 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE H240nr Smart Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 6.60 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> HPE Smart Array Gen9 Controllers 
+						</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 7.00 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 6.88 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 6.30 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 6.60 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 6.60 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 3820C 10/20Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> ESXi HPE Synergy 3820C 10/20Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5 :1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1; ESXi6.7: 1.0.52.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2-1; ESXi 6.7: 1.0.77.2-1 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1; ESXi 6.7: 1.0.52.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 2820C 10Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 7.18.02 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 7.17.71 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 7.15.97 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 7.17.19 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> ESXi HPE Synergy 2820C 10Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> ESXi 6.0: 2.713.70.v60.8; ESXi 6.5: 1.0.86.0-1; ESXi 6.7: 1.0.86.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 ">ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1; ESXi 6.7: 1.0.52.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> ESXi 6.0: 2.713.70.v60.6; ESXi 6.5: 1.0.77.2; ESXi 6.7: 1.0.77.2 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3; ESXi 6.7: 1.0.52.0 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3-1 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> ESXi 6.0: 2.713.60.v60.2; ESXi 6.5: 1.0.60.3 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 4820C 10/20/25Gb Converged Network Adapter</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b">ESXi HPE Synergy 4820C 10/20/25Gb Converged Network Adapter</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> HPE Synergy 4610C 10/25Gb Ethernet Adapter</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 10.5.6 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 10.4.7 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 3830C 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 6.01.79 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 6.01.50 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 6.01.59 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 3530C 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 11.4.334.31 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 11.4.334.31 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 11.4.334.31 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 11.4.334.31 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 11.4.225.21 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 11.4.334.31 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 11.4.334.11 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> HPE Synergy 5830C 32Gb Fibre Channel Host Bus Adapter</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 01.72.03 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 01.72.03 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 01.72.03 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 01.72.03 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 01.72.03 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 01.71.03 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> HPE Synergy 5330C 32Gb Fibre Channel Host Bus Adapter</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 12.0.346.43 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 12.0.346.9 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> Gen9 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.0.9 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Integrated Lights Out 4 ( HPE iLO 4) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 2.72 Oct 20 2019 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 2.70 May 07 2019 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 2.70 May 07 2019 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 2.72 Oct 20 2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 2.72 Oct 20 2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 2.72 Oct 20 2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 2.70 May 07 2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 2.70 May 07 2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 2.70 May 07 2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 2.62 Jan 09 2019 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 2.60 Jul 27 2018 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 2.61 Jul 27 2018 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 2.61 Jul 27 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 2.61 Jul 27 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 2.60 May 23 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 2.61 Jul 27 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 2.60 May 23 2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Integrated Lights Out 5 (HPE iLO 5) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 2.11 Nov 12 2019 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.46 Jul 25 2019 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.45 Jun 27 2019 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 2.11 Nov 12 2019 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 2.11 Nov 12 2019 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 2.11 Nov 12 2019 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.46 Jul 25 2019 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.46 Jul 25 2019 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.45 Jun 27 2019 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.46 Jul 25 2019 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.45 Jun 27 2019 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.45 Jun 27 2019 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.45 Jun 27 2019 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.40 Feb 05 2019 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.40 Feb 05 2019 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.40 Feb 05 2019 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.37 Oct 28 2018 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.40 Feb 05 2019 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.40 Feb 05 2019 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.37 Oct 25 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.30 May 31 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.35 Aug 14 2018 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.30 May 31 2018 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> Gen10 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.0.4 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Virtual Connect SE 40Gb F8 Module for Synergy 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.4.2.1005 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.3.3.1002 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.2.3.1 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.3.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.3.0.1005 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Virtual Connect SE 16Gb FC Module for Synergy</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 4.10.50 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 5.01.51 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 4.10.50 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 4.00.33 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 4.10.50 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 4.10.50 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> HPE Virtual Connect SE 32Gb FC Module for Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 5.10.69 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 5.00.50 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 12Gb SAS Connection Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.5.105.0 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.5.11.0 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.2.4.0 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.4.6.0 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy D3940 Storage Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 3.85 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 3.52 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 2.07 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 2.07 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 20Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.16 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 10Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.18 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.08 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.16 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.16 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b">HPE Synergy 6810C 25/50Gb Ethernet Adapter</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.37.34 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b">ESXi HPE Synergy 6810C 25/50Gb Converged Network Adapter</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b">HPE Synergy 6820C 25/50Gb Converged Network Adapter</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.45.20 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> — 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b">ESXi HPE Synergy 6820C 25/50Gb Converged Network Adapter</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> ESXi 6.0: 3.11.7.0-1; ESXi 6.5: 3.11.7.0-1; ESXi 6.7: 3.11.7.0-1 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> — 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b">HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 2.0.0.1006 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> — 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b">HPE Synergy 25/50Gb Interconnect Link Module</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.0.0.1002 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> — 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> Included in Synergy Custom SPP and not managed by OneView 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne boldline" style="text-align:center;" headers="d205687e277 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwo boldline" style="text-align:center;" headers="d205687e284 ">&nbsp;</td><td class="entry nocellnorowborder ColumnThree boldline" style="text-align:center;" headers="d205687e291 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFour boldline" style="text-align:center;" headers="d205687e298 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFive boldline" style="text-align:center;" headers="d205687e305 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSix boldline" style="text-align:center;" headers="d205687e312 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeven boldline" style="text-align:center;" headers="d205687e321 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEight boldline" style="text-align:center;" headers="d205687e328 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNine boldline" style="text-align:center;" headers="d205687e335 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTen boldline" style="text-align:center;" headers="d205687e342 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEleven boldline" style="text-align:center;" headers="d205687e350 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwelve boldline" style="text-align:center;" headers="d205687e357 ">&nbsp;</td><td class="entry nocellnorowborder ColumnThirteen boldline" style="text-align:center;" headers="d205687e366 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFourteen boldline" style="text-align:center;" headers="d205687e375 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFifteen boldline" style="text-align:center;" headers="d205687e384 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSixteen boldline" style="text-align:center;" headers="d205687e393 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeventeen boldline" style="text-align:center;" headers="d205687e402 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEighteen boldline" style="text-align:center;" headers="d205687e411 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNineteen boldline" style="text-align:center;" headers="d205687e420 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwenty boldline" style="text-align:center;" headers="d205687e429 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentyone boldline" style="text-align:center;" headers="d205687e438 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentytwo boldline" style="text-align:center;" headers="d205687e448 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentythree boldline" style="text-align:center;" headers="d205687e457 ">&nbsp;</td><td class="entry nocellnorowborder Empty  boldline" style="text-align:center;" headers="d205687e466 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 10Gb Pass Thru Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.17 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.15 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.15 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 6410C 25/50Gb Ethernet Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 12.26.1040 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 12.24.9000 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 12.26.1040 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 12.26.1040 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 12.26.1040 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 12.24.9000 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 12.24.9000 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 12.24.9000 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 12.23.8036 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 12.22.1414 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> Not Included in the Synergy Custom SPP 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne boldline" style="text-align:center;" headers="d205687e277 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwo boldline" style="text-align:center;" headers="d205687e284 ">&nbsp;</td><td class="entry nocellnorowborder ColumnThree boldline" style="text-align:center;" headers="d205687e291 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFour boldline" style="text-align:center;" headers="d205687e298 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFive boldline" style="text-align:center;" headers="d205687e305 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSix boldline" style="text-align:center;" headers="d205687e312 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeven boldline" style="text-align:center;" headers="d205687e321 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEight boldline" style="text-align:center;" headers="d205687e328 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNine boldline" style="text-align:center;" headers="d205687e335 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTen boldline" style="text-align:center;" headers="d205687e342 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEleven boldline" style="text-align:center;" headers="d205687e350 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwelve boldline" style="text-align:center;" headers="d205687e357 ">&nbsp;</td><td class="entry nocellnorowborder ColumnThirteen boldline" style="text-align:center;" headers="d205687e366 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFourteen boldline" style="text-align:center;" headers="d205687e375 ">&nbsp;</td><td class="entry nocellnorowborder ColumnFifteen boldline" style="text-align:center;" headers="d205687e384 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSixteen boldline" style="text-align:center;" headers="d205687e393 ">&nbsp;</td><td class="entry nocellnorowborder ColumnSeventeen boldline" style="text-align:center;" headers="d205687e402 ">&nbsp;</td><td class="entry nocellnorowborder ColumnEighteen boldline" style="text-align:center;" headers="d205687e411 ">&nbsp;</td><td class="entry nocellnorowborder ColumnNineteen boldline" style="text-align:center;" headers="d205687e420 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwenty boldline" style="text-align:center;" headers="d205687e429 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentyone boldline" style="text-align:center;" headers="d205687e438 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentytwo boldline" style="text-align:center;" headers="d205687e448 ">&nbsp;</td><td class="entry nocellnorowborder ColumnTwentythree boldline" style="text-align:center;" headers="d205687e457 ">&nbsp;</td><td class="entry nocellnorowborder Empty  boldline" style="text-align:center;" headers="d205687e466 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HPE Synergy 40Gb F8 Switch Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 1.5.0.1004 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 1.4.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 1.3.3.1002 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 1.4.0.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 1.3.3.1002 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 1.2.3.1 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 1.3.1.1003 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 1.3.0.1005 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> Intelligent Provisioning (Gen10) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 3.40 Build 196 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 3.31 Build 44 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 3.40 Build 196 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 3.40 Build 196 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 3.40 Build 196 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 3.31 Build 44 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 3.31 Build 44 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 3.31 Build 44 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 3.30 Build 248 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 3.20 Build 95 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 3.21 Build 48 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 3.21 Build 48 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 3.20 Build 95 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 3.10 Build 189 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 3.20 Build 95 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 3.20 Build 95 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><strong class="ph b"> HP Intelligent Provisioning (Gen9) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> — 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> — 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> — 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 2.70b Build 8 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 2.71 Build 140 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 2.70b Build 8 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 2.61 Build 11 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 2.70b Build 8 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 2.70 Build 11 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 16Gb/12 Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 8.1.2d 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 8.1.2a 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 16Gb/24 Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 8.1.2d 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 8.1.2a 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 16Gb/24 Power Pack+ Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.1c 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> 8.1.2f 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> 8.1.1a 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> 8.1.2d 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> 8.1.2a 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 32Gb/12 2SFP+ Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 32Gb/20 4SFP+ Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="d205687e270 "><p class="p"><strong class="ph b"> Brocade 32Gb/20 4SFP+ Power Pack+ Fibre Channel SAN Switch Module for HPE Synergy</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d205687e277 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwo" style="text-align:center;" headers="d205687e284 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThree" style="text-align:center;" headers="d205687e291 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFour" style="text-align:center;" headers="d205687e298 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFive" style="text-align:center;" headers="d205687e305 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSix" style="text-align:center;" headers="d205687e312 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeven" style="text-align:center;" headers="d205687e321 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEight" style="text-align:center;" headers="d205687e328 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnNine" style="text-align:center;" headers="d205687e335 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTen" style="text-align:center;" headers="d205687e342 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnEleven" style="text-align:center;" headers="d205687e350 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnTwelve" style="text-align:center;" headers="d205687e357 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnThirteen" style="text-align:center;" headers="d205687e366 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFourteen" style="text-align:center;" headers="d205687e375 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnFifteen" style="text-align:center;" headers="d205687e384 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSixteen" style="text-align:center;" headers="d205687e393 "> 8.2.0 GA 
+				  </td><td class="entry nocellnorowborder ColumnSeventeen" style="text-align:center;" headers="d205687e402 "> — 
+				  </td><td class="entry nocellnorowborder ColumnEighteen" style="text-align:center;" headers="d205687e411 "> — 
+				  </td><td class="entry nocellnorowborder ColumnNineteen" style="text-align:center;" headers="d205687e420 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwenty" style="text-align:center;" headers="d205687e429 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentyone" style="text-align:center;" headers="d205687e438 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentytwo" style="text-align:center;" headers="d205687e448 "> — 
+				  </td><td class="entry nocellnorowborder ColumnTwentythree" style="text-align:center;" headers="d205687e457 "> — 
+				  </td><td class="entry nocellnorowborder Empty" style="text-align:center;" headers="d205687e466 "> — 
+				  </td></tr></tbody></table></div> 
+		</div> 
+	 </section></div></article></main></div><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script></body></html>

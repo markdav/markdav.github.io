@@ -1,0 +1,188 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>HPE Synergy Firmware Comparison Tool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="toolscript.js"></script>
+<script type="text/javascript"> 
+		function myclick() {
+			var myLink = document.getElementById('export');
+
+			myLink.onclick = function () {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = "csvexport.js";
+				document.getElementsByTagName("head")[0].appendChild(script);
+				return false;
+			}
+			document.getElementById('export').click();
+		}
+
+</script>
+
+    </head><body id="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62"><a name="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62"><!-- --></a>
+    <div class="sidenav">
+ <p class="navtitle" style="margin-bottom:10px; margin-top:-10px;">HPE Synergy Software Release Information</p>
+    <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+ <ul class="navbar" style="margin-top: 10px; margin-left: -35px"><li class="navsectiontitle" style="list-style-type:none; margin-bottom:30px">HPE SYNERGY SOFTWARE OVERVIEW &amp; DOWNLOADS</li>
+                                <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px">
+                <a href="index.html">HPE Synergy Software Releases - Overview</a>
+                </li>
+                                    <li style="margin-bottom:10px"><a href="Whats_New.html" >HPE Synergy Software Releases - What's New?</a></li>
+	 </ul>
+   <br>
+ <div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type:none; margin-bottom:20px">HPE SYNERGY SOFTWARE RELEASE TOOLS</li>
+    <ul style="list-style-type: none; margin-left: -30px;">
+                <li style="margin-bottom:10px"><a href="Firmware_Comparison_Tool.html" class="open">HPE Synergy Firmware Comparison Tool</a></li>
+    <li style="margin-bottom:10px"><a href="Firmware_Feature_Table.html" >HPE Synergy Firmware Feature Comparison Table</a></li>
+    <li style="margin-bottom:10px"><a href="Upgrade_Table.html">HPE Synergy Upgrade Paths</a></li>
+    <li style="margin-bottom:10px"><a href="VMware_Support.html">VMware OS Support for HPE Synergy</a></li>
+</ul>
+   <br>
+                                
+<div style="border-top-style: solid; border-color: #eee; width: 100%;"></div>
+                                <li class="navsectiontitle" style="margin-top: 10px; list-style-type: none; margin-bottom:10px">OTHER RESOURCES</li>
+<ul style="list-style-type: none; margin-left: -30px;">
+    <li><a href="EOS_Upgrade_Paths.html">Upgrade Paths for Past HPE Synergy Releases</a></li>
+    <li><a href="Identifying_upgrade_paths.html">Identifying Upgrade Paths</a></li>
+    <li><a href="Resources.html">HPE Synergy Resources</a></li>
+    <li><a class="xref external" href="http://www.hpe.com/info/synergy-docs" target="_blank">Hewlett Packard Enterprise Information Library</a></li>
+     </ul></ul>
+ 
+
+
+</div><div class="main">
+    <main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">HPE Synergy Firmware Comparison Tool</h1><div class="body refbody"><section class="section" id="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><a name="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__GUID-310149FB-D41C-43F7-853F-A92692C4F6A9"><!-- --></a><h2 class="title sectiontitle">Selecting HPE Synergy Custom SPPs</h2> 
+		 
+		<p class="p"> Selected management combination: 
+		</p> 
+		<p class="p"><strong class="ph b">HPE Synergy Composer version 3.10.04 / HPE Synergy Image Streamer version 3.10.02</strong> 
+		</p> 
+		<p class="p">To select a different management combination, click 
+		  <strong class="ph b"><a class="xref standard" href="Firmware_Comparison_Tool.html">here</a></strong>. 
+		</p> 
+    <div class="p"> 
+		  <div style="width:100%; margin-top:1em"></div><div class="notetitle"></div><div class="note note"><span style="font-weight:bold">NOTE: </span><p class="p">The recommended HPE Synergy Custom SPP is listed below as default. HPE Synergy Custom SPPs marked with an asterisk (*) or 
+				<cite class="cite">italics</cite> are near end of support life or are no longer supported. 
+			 </p></div> 
+		</div>
+        
+		<p class="p">The 
+		  <strong class="ph b">Export to CSV</strong> function is not compatible with Internet Explorer. 
+		</p> 
+        <input type="search" class="tableFilter" data-table="tableintopic" placeholder="Type a keyword to filter table" style="margin-bottom: 0px; width: 250px; height: 30px; background-image: url(searchicon.png); background-position:left; background-repeat: no-repeat; background-position:left; background-size: contain; padding: 0px 30px" >
+            
+            <p><strong><input type="checkbox" style=" margin-top: 10px; margin-right:-80px; margin-left:-95px; " >Show firmware differences</strong></p>
+<p><a href="javascript:window.print()" class="printbtn" style="float: left; margin-left: 0px; margin-bottom: 10px; margin-top: auto; margin-right:5px">PRINT TABLE</a>
+										
+<a href='#' id="export" onclick="myclick()" class="exportbtn" style="float:left ; margin-left: 0px; margin-bottom: 10px; margin-top: auto">EXPORT TO .CSV</a>
+</p><br><br>
+
+	 </section><section class="section" id="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__SECTION_03E08D4EEB534B59B5120AA774B89A0C"><a name="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__SECTION_03E08D4EEB534B59B5120AA774B89A0C"><!-- --></a> 
+		<div class="p"> 
+		<div class="tablenoborder"><a name="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__TABLE_A85F473E7FD5497F8B051E1817346EEE"><!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__TABLE_A85F473E7FD5497F8B051E1817346EEE" class="table tableintopic" frame="above" border="1" rules="rows"><colgroup><col style="width:40%"><col style="width:60%"></colgroup><thead class="thead" style="text-align:left;"><tr isThead="nothead" class="row"><th class="entry nocellnorowborder" id="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER" style="text-align:center;"><p class="p">Synergy Custom SPP Version 
+					 </p><p class="p">REPORTED AS 
+					 </p><p class="p">Part Number 
+					 </p></th><th class="entry nocellnorowborder ColumnOne" style="text-align:center;" id="d48e67"><p class="p"><cite class="cite">2017.07.20170721</cite> 
+					 </p><p class="p"> 
+					 </p><p class="p">Z7550-96415 
+					 </p></th></tr></thead><tbody class="tbody" brand="HPE-Metric"><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 480 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> I37 v2.40 02/17/2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 660 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> I39 v2.40 02/17/2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 620/680 Gen9 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> I40 v2.42 04/05/2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 660 Gen10 Compute Module</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> I43 v1.20 06/01/2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> System ROM HPE Synergy 480 Gen10 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> I42 v1.20 06/01/2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b">HPE Synergy Frame Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 2 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Smart Array SR Gen10 Controllers 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.04 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE H240nr Smart Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">5.52 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><p class="p"><strong class="ph b">HPE Smart Array Gen9 Controllers 
+						</strong> 
+					 </p></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">5.52 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 3820C 10/20Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 7.15.37 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> ESXi HPE Synergy 3820C 10/20Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 2820C 10Gb Converged Network Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 7.15.37 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> ESXi HPE Synergy 2820C 10Gb Converged Network Adapter Driver 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 3830 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 6.01.36 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 3530 C 16Gb Fibre Channel Host Bus Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 11.2.254.14 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> Gen9 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b">HPE Integrated Lights Out 4 (HPE iLO 4) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 2.54 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Integrated Lights Out 5 (HPE iLO 5) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.10 Jun 07 2017 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> Gen10 Power PIC 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Virtual Connect SE 40Gb F8 Module for Synergy</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.1.0.1010 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Virtual Connect SE 16Gb FC Module for Synergy</strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.05.24 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 12Gb SAS Connection Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.1.5.0 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy D3940 Storage Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 2.07 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 20Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.08 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 10Gb Interconnect Link Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.08 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> Included in Synergy Custom SPP and not managed by OneView 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne boldline" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 10Gb Pass Thru Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> Not included 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 6410C 25/50Gb Ethernet Adapter 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 ">Not included 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder boldline" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> Not Included in the Synergy Custom SPP 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne  boldline" style="text-align:center;" headers="d48e67 ">&nbsp;</td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HPE Synergy 40Gb F8 Switch Module 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 1.1.0.1010 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> Intelligent Provisioning (Gen10) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 3.00 Build 382 
+				  </td></tr><tr isThead="thead" class="row"><td class="entry nocellnorowborder" style="text-align:center;" headers="GUID-0097D161-52B5-43DD-8CD5-E1C267CAAB62__LEFTHEADER "><strong class="ph b"> HP Intelligent Provisioning (Gen9) 
+					 </strong></td><td class="entry nocellnorowborder ColumnOne" style="text-align:center;" headers="d48e67 "> 2.61 Build 11 
+				  </td></tr></tbody></table></div> 
+		</div>  
+    </section></div></article></main></div><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script></body></html>
