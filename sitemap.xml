@@ -10,11 +10,41 @@
             <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
             <authorname>John Smith</authorname>
             <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>Here is an example Doc</kmdocfulltitle>
+            <kmdocfulltitle>Here is an Example1 Doc</kmdocfulltitle>
             <kmdocid>ex1en_us</kmdocid>
             <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
             <kmdoclocale>en_US</kmdoclocale>
             <tags />
         </coveo:metadata>
     </url>
+    <url>
+        <loc>https://markdav.github.io/unmanaged/ex2/home.htm</loc>
+        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
+        <priority>1.00</priority>
+        <coveo:metadata>
+            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
+            <authorname>Luke Kelly</authorname>
+            <kmdisclosurelevel>cv2</kmdisclosurelevel>
+            <kmdocfulltitle>This is Example2</kmdocfulltitle>
+            <kmdocid>ex1en_us</kmdocid>
+            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
+            <kmdoclocale>en_US</kmdoclocale>
+            <tags />
+        </coveo:metadata>
+    </url>
+    <url>
+        <loc>https://markdav.github.io/unmanaged/ex3/index.html</loc>
+        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
+        <priority>1.00</priority>
+        <coveo:metadata>
+            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
+            <authorname>Shania Bumblebee</authorname>
+            <kmdisclosurelevel>cv2</kmdisclosurelevel>
+            <kmdocfulltitle>And now we see Example3</kmdocfulltitle>
+            <kmdocid>ex1en_us</kmdocid>
+            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
+            <kmdoclocale>en_US</kmdoclocale>
+            <tags />
+        </coveo:metadata>
+    </url>        
 </urlset>
