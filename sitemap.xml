@@ -47,4 +47,20 @@
             <tags />
         </coveo:metadata>
     </url>        
+    <url>
+        <loc>https://markdav.github.io/unmanaged/ex3/Firmware_Comparison_Tool.html</loc>
+        <lastmod>2021-09-10T13:47:23+00:00</lastmod>
+        <priority>1.00</priority>
+        <coveo:metadata>
+            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
+            <authorname>Shania Bumblebee</authorname>
+            <kmdisclosurelevel>cv2</kmdisclosurelevel>
+            <kmdocfulltitle>Here isa topic in Example3</kmdocfulltitle>
+            <kmdocid>ex3en_us</kmdocid>
+            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
+            <kmdoclocale>en_US</kmdoclocale>
+            <tags />
+        </coveo:metadata>
+    </url>        
+    
 </urlset>
