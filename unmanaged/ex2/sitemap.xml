@@ -4,13 +4,23 @@
     xmlns:coveo="https://www.coveo.com/schemas/metadata">
     <url>
         <loc>https://markdav.github.io/unmanaged/ex2/home.htm</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>        
+        <lastmod>2021-02-10T13:47:23+00:00</lastmod>
+        <priority>1.00</priority>  
+        <coveo:metadata>
+            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
+            <authorname>Manzoor</authorname>
+            <kmdisclosurelevel>cv2</kmdisclosurelevel>
+            <kmdocfulltitle>Example 1 document</kmdocfulltitle>
+            <kmdocid>ex2en_us</kmdocid>
+            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
+            <kmdoclocale>en_US</kmdoclocale>
+            <tags />
+        </coveo:metadata>               
     </url>    
     <url>
-        <loc>markdav.github.io/unmanaged/ex2/home.htm#Common%20Files/Accessing%20Portal/forgot_password.htm%3FTocPath%3DAccessing%2520Portal%7C_____2</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
+        <loc>https://markdav.github.io/unmanaged/ex2/home.htm#Common%20Files/Accessing%20Portal/forgot_password.htm%3FTocPath%3DAccessing%2520Portal%7C_____2</loc>
+        <lastmod>2021-02-10T13:47:23+00:00</lastmod>
         <priority>1.00</priority>        
-    </url>        
+    </url>       
     
 </urlset>
