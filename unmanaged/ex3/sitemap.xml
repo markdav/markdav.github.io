@@ -4,23 +4,15 @@
     xmlns:coveo="https://www.coveo.com/schemas/metadata">
     <url>
         <loc>https://markdav.github.io/unmanaged/ex3/index.html</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>        
     </url>    
     <url>
         <loc>https://markdav.github.io/unmanaged/ex3/Whats_New.html</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>        
     </url>     
     <url>
-        <loc>/unmanaged/ex3/Resources.html</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>        
+        <loc>/unmanaged/ex3/Resources.html</loc>   
     </url>   
     <url>
         <loc>Firmware_Comparison_Tool.html</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>        
     </url>                    
 </urlset>
 
