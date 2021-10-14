@@ -1,50 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-    xmlns:coveo="https://www.coveo.com/schemas/metadata">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
         <loc>https://markdav.github.io/unmanaged/ex1/sitemap.xml</loc>
-        <lastmod>2015-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>
-        <coveo:metadata>
-            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
-            <authorname>John Smith</authorname>
-            <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>Example 1 document</kmdocfulltitle>
-            <kmdocid>ex1en_us</kmdocid>
-            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
-            <kmdoclocale>en_US</kmdoclocale>
-            <tags />
-        </coveo:metadata>
     </sitemap>
     <sitemap>
         <loc>https://markdav.github.io/unmanaged/ex2/sitemap.xml</loc>
-        <lastmod>2020-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>
-        <coveo:metadata>
-            <modificationdate>2021-02-10T13:47:23+00:00</modificationdate>
-            <authorname>Luke Kelly</authorname>
-            <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>This is Example2</kmdocfulltitle>
-            <kmdocid>ex2en_us</kmdocid>
-            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
-            <kmdoclocale>en_US</kmdoclocale>
-            <tags />
-        </coveo:metadata>
     </sitemap>
     <sitemap>
         <loc>https://markdav.github.io/unmanaged/ex3/sitemap.xml</loc>
-        <lastmod>2021-02-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>
-        <coveo:metadata>
-            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
-            <authorname>Shania Bumblebee</authorname>
-            <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>And now we see Example3</kmdocfulltitle>
-            <kmdocid>ex3en_us</kmdocid>
-            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
-            <kmdoclocale>en_US</kmdoclocale>
-            <tags />
-        </coveo:metadata>
     </sitemap>              
 </sitemapindex>
