@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
     xmlns:coveo="https://www.coveo.com/schemas/metadata">
-    <url>
-        <loc>https://markdav.github.io/unmanaged/ex1/Setup.htm</loc>
+    <sitemap>
+        <loc>https://markdav.github.io/unmanaged/ex1/sitemap.xml</loc>
         <lastmod>2015-02-10T13:47:23+00:00</lastmod>
         <priority>1.00</priority>
         <coveo:metadata>
             <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
             <authorname>John Smith</authorname>
             <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>Here is an Example1 Doc</kmdocfulltitle>
+            <kmdocfulltitle>Example 1 document</kmdocfulltitle>
             <kmdocid>ex1en_us</kmdocid>
             <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
             <kmdoclocale>en_US</kmdoclocale>
             <tags />
         </coveo:metadata>
-    </url>
-    <url>
-        <loc>https://markdav.github.io/unmanaged/ex2/home.htm</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://markdav.github.io/unmanaged/ex2/sitemap.xml</loc>
         <lastmod>2020-02-10T13:47:23+00:00</lastmod>
         <priority>1.00</priority>
         <coveo:metadata>
@@ -31,9 +31,9 @@
             <kmdoclocale>en_US</kmdoclocale>
             <tags />
         </coveo:metadata>
-    </url>
-    <url>
-        <loc>https://markdav.github.io/unmanaged/ex3/index.html</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://markdav.github.io/unmanaged/ex3/sitemap.xml</loc>
         <lastmod>2021-02-10T13:47:23+00:00</lastmod>
         <priority>1.00</priority>
         <coveo:metadata>
@@ -46,21 +46,5 @@
             <kmdoclocale>en_US</kmdoclocale>
             <tags />
         </coveo:metadata>
-    </url>        
-    <url>
-        <loc>https://markdav.github.io/unmanaged/ex3/Firmware_Comparison_Tool.html</loc>
-        <lastmod>2021-09-10T13:47:23+00:00</lastmod>
-        <priority>1.00</priority>
-        <coveo:metadata>
-            <modificationdate>2015-02-10T13:47:23+00:00</modificationdate>
-            <authorname>Shania Bumblebee</authorname>
-            <kmdisclosurelevel>cv2</kmdisclosurelevel>
-            <kmdocfulltitle>Here isa topic in Example3</kmdocfulltitle>
-            <kmdocid>ex3en_us</kmdocid>
-            <kmdoclanguagecode>cv1871440</kmdoclanguagecode>
-            <kmdoclocale>en_US</kmdoclocale>
-            <tags />
-        </coveo:metadata>
-    </url>        
-    
-</urlset>
+    </sitemap>              
+</sitemapindex>
